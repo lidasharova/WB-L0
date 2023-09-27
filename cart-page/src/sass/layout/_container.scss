@@ -1,0 +1,24 @@
+.container-header {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 16px 20px;
+  @media (max-width: mobile-width) {
+    padding: 14px 13px;
+  }
+}
+.container-content {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 20px 24px;
+  @media (max-width: mobile-width) {
+    padding: 15px 16px;
+  }
+}
+.container-footer {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 24px 24px;
+  @media (max-width: mobile-width) {
+    padding: 24px 24px;
+  }
+}
