@@ -4,20 +4,36 @@
   font-style: normal;
 }
 %font-SegoeUI-SemiBold {
-  font-family: SegoeUI-Bold, Verdana, sans-serif;
+  font-family: SegoeUI-SemiBold, Verdana, sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 %font-SegoeUI-Regular {
-  font-family: SegoeUI-Bold, Verdana, sans-serif;
+  font-family: SegoeUI-Regular, Verdana, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-%font-SegoeUI-Regular {
+%font-SegoeUI-Light {
   font-family: SegoeUI-Light, Verdana, sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 %transition {
-  transition: all 0.4s ease-out;
+  transition: all 0.5s ease-out;
+}
+%flex-row-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+%flex-column-space-between {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+%flex-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,12 +1,42 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ТОВАРЫ И ТОЧКА</title>
-  </head>
-  <body>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Товары и Точка</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo__container">
+        <div class="header__menu">
+          <span class="hamburger__line"></span>
+        </div>
+        <div class="header__logo">товары и точка</div>
+      </div>
+
+      <div class="search__container">
+        <input type="text" id="search__input" placeholder="Я ищу..." />
+        <span class="search__button" aria-label="Найти">
+        </span>
+      </div>
+      <div class="header__buttons__container">
+        <a class="header__link__profile" href="#" _target="_blank">
+          <span class="button__profile__icon"></span>
+          Профиль
+        </a>
+        <a class="header__link__cart" href="#" _target="_blank">
+          <span class="button__cart__icon"></span>
+          Корзина
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

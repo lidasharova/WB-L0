@@ -1,4 +1,13 @@
-@mixin font($size, $height) {
+@mixin font($size, $height, $letter: normal) {
   font-size: $size;
   line-height: $height;
+  letter-spacing: $letter;
+}
+
+@mixin background-icon($width, $height) {
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  background-position: center center;
+  // background-size: contain;
 }
