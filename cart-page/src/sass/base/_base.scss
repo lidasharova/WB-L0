@@ -1,26 +1,26 @@
-@font-face {
-  font-family: SegoeUI-Bold;
-  src: url('/src/assets/fonts/SegoeUI/SegoeUI-Bold.woff2') format('woff2');
-  font-display: swap;
-}
+// @font-face {
+//   font-family: SegoeUI-Bold;
+//   src: url('/src/assets/fonts/SegoeUI/SegoeUI-Bold.woff2') format('woff2');
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: SegoeUI-SemiBold;
+//   src: url('/src/assets/fonts/SegoeUI/SegoeUI-SemiBold.woff2') format('woff2');
+//   font-display: swap;
+// }
 
 @font-face {
-  font-family: SegoeUI-SemiBold;
-  src: url('/src/assets/fonts/SegoeUI/SegoeUI-SemiBold.woff2') format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: SegoeUI-Regular;
+  font-family: SegoeUI;
   src: url('/src/assets/fonts/SegoeUI/SegoeUI-Regular.woff2') format('woff2');
   font-display: swap;
 }
 
-@font-face {
-  font-family: SegoeUI-Light;
-  src: url('/src/assets/fonts/SegoeUI/SegoeUI-Light.woff2') format('woff2');
-  font-display: swap;
-}
+// @font-face {
+//   font-family: SegoeUI-Light;
+//   src: url('/src/assets/fonts/SegoeUI/SegoeUI-Light.woff2') format('woff2');
+//   font-display: swap;
+// }
 
 html {
   scroll-behavior: smooth;
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  @extend %font-SegoeUI-Regular;
+  @extend %font-SegoeUI;
 }
 
 h1,

@@ -1,14 +1,6 @@
-.container-content {
-  max-width: $desktop-width;
-  margin: 0 auto;
-  padding: 20px 24px;
 
-  @media (max-width: $mobile-width) {
-    padding: 15px 16px;
-  }
-}
 
-.container-footer {
+.footer__container {
   max-width: $desktop-width;
   margin: 0 auto;
   padding: 24px;

@@ -15,7 +15,7 @@
         <div class="header__menu">
           <span class="hamburger__line"></span>
         </div>
-        <div class="header__logo">товары и точка</div>
+        <div class="header__logo">ТОВАРЫ И ТОЧКА</div>
       </div>
 
       <div class="search__container">
@@ -25,17 +25,97 @@
       </div>
       <div class="header__buttons__container">
         <a class="header__link__profile" href="#" _target="_blank">
-          <span class="button__profile__icon"></span>
+          <span class="profile__icon"></span>
+          <span class="profile__notify"></span>
           Профиль
         </a>
         <a class="header__link__cart" href="#" _target="_blank">
-          <span class="button__cart__icon"></span>
+          <span class="cart__icon"></span>
+          <span class="cart__notify"></span>
           Корзина
         </a>
       </div>
     </div>
   </header>
 
+  <main class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <section class="cart__list">
+          <h1 class="cart__title">Корзина</h1>
+          <div class="cart__accordion cart__accordion__available ">
+            <div class="cart__accordion__info">
+              <span class="cart__accordion__count">266 товаров</span>
+              <span class="cart__accordion__price">2 100 569</span>
+            </div>
+            <div class="cart__accordion__icon_open"></div>
+          </div>
+
+          <div class="cart__accordion cart__accordion__soldout">
+            <div class="cart__accordion__info">
+              <span class="cart__accordion__count">266 товаров</span>
+              <span class="cart__accordion__price">2 100 569</span>
+            </div>
+            <div class="cart__accordion__icon_open"></div>
+          </div>
+        </section>
+        <section class="form delivery__form">
+          <h2 class="form__title">Способ доставки</h2>
+          <div class="delivery__table">
+            <div class="delivery__address__wrapper">
+              <div class="delivery__table__item">Пункт выдачи</div>
+              <div class="address__data__wrapper">
+                <span class="delivery__address__data">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+                <span class="address__grade__star"></span>
+                <span class="address__grade">4.99</span>
+                <span class="address__office-hours">Ежедневно с 10 до 21</span>
+              </div>
+            </div>
+            <div class="delivery__cost__wrapper">
+              <div class="delivery__table__item">Стоимость доставки</div>
+              <span class="delivery__cost__data">Бесплатно</span>
+            </div>
+            <div class="delivery__date__item">
+              <div class="delivery__table__item delivery__date">
+                5—6 февраля
+              </div>
+              <div class="delivery__date__photos__wrapper">
+                <ul class="delivery__date__photos">
+                  <li class="delivery__date__photo"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="delivery__date__item">
+              <div class="delivery__table__item delivery__date">
+                7—8 февраля
+              </div>
+              <div class="delivery__date__photos__wrapper">
+                <ul class="delivery__date__photos">
+                  <li class="delivery__date__photo"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="delivery__conditions__wrapper">
+            <span class="conditions__icon"></span>
+            <div class="conditions__text">Обратная доставка товаров на склад при отказе — <a class="conditions__link"
+               href="#">бесплатно</a>
+            </div>
+
+          </div>
+        </section>
+        <section class="form payment__form">
+          <h2 class="form__title">Способ оплаты</h2>
+
+        </section>
+        <section class="form user__form">
+          <h2 class="form__title">Получатель</h2>
+
+        </section>
+      </div>
+      <section class="cart__order"></section>
+    </div>
+  </main>
   <script type="module" src="/main.js"></script>
 </body>
 

@@ -11,6 +11,10 @@
 
 //Layout
 @import 'layout/container';
+@import 'layout/header';
 
 //Components
-@import 'layout/header';
+@import 'components/card-list';
+@import 'components/delivery-form';
+// @import 'components/payment-form';
+@import 'components/user-form';

@@ -1,0 +1,88 @@
+.form {
+  padding: 16px 24px 24px 24px;
+  background-color: $color-white;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.form__title {
+  @include font(24px, 32px, 600, -2.4px);
+  margin-bottom: 16px;
+}
+
+.delivery__table {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.address__grade__star {
+  background-image: url('/src/assets/svg/delivery/star.svg');
+  @include background-icon(12px, 12px);
+  position: relative;
+  top: 2px;
+  left: 2px;
+  display: block;
+  margin-right: 4px;
+}
+.address__grade {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.delivery__address__wrapper,
+.delivery__cost__wrapper,
+.delivery__date__photos__wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.delivery__table__item,
+.delivery__date__item {
+  @include font(13px, 24px, 600, 0.1px);
+  width: 176px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  display: flex;
+}
+
+.address__data__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 380px;
+}
+.address__grade,
+.address__office-hours {
+  @include font(13px, 16px, 400);
+  margin-right: 8px;
+  margin-left: 4px;
+}
+
+.delivery__address__wrapper {
+  margin-bottom: 16px;
+}
+
+.delivery__conditions__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.conditions__icon {
+  background-image: url('/src/assets/svg/delivery/shipping.svg');
+  @include background-icon(22px, 22px);
+  position: relative;
+  display: block;
+  margin-right: 8px;
+}
+
+.conditions__text {
+  @include font(13px, 16px, 400);
+}
+
+.conditions__link {
+  color: $color-green;
+  text-decoration: none;
+  border-bottom: 1px dashed $color-green-transparent-20;
+  padding-bottom: 2px;
+}
