@@ -104,12 +104,12 @@
   justify-content: space-between;
 }
 
-.cart-list__item__good {
+.cart-list__item__product {
   display: flex;
   align-items: center;
 }
 
-.list-item__good__img {
+.list-item__product__img {
   @include background-icon(72px, 96px);
   margin-right: 16px;
 }
@@ -118,25 +118,25 @@
   background-image: url('src/assets/img/cart-items/t-shirt.png');
 }
 
-.list-item__good__name {
+.list-item__product__name {
   @include font(16px, 24px, 400, -0.04em);
   margin-bottom: 8px;
   max-width: 275px;
 }
 
-.list-item__good__options {
+.list-item__product__options {
   @include font(13px, 16px, 400, -0.04em);
   display: flex;
   align-items: center;
   margin-bottom: 8px;
 }
 
-.list-item__good__color {
+.list-item__product__color {
   margin-right: 16px;
 }
 
 .provider-color,
-.list-item__good__stock {
+.list-item__product__stock {
   @include font(13px, 16px, 400, -0.04em);
   color: $color-gray;
   margin-bottom: 2px;
