@@ -1,0 +1,48 @@
+.checkbox__decor,
+.checkbox-checked {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  margin-right: 11px;
+  user-select: none;
+  background: none;
+  border: 1px solid $color-white-transparent-20;
+  @extend %transition;
+  cursor: pointer;
+}
+
+.checkbox-text__text {
+  @include font(16px, 24px, 400, -0.03em);
+}
+
+.checkbox__decor {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border: 1px solid $color-checkbox-border;
+  border-radius: 6px;
+  margin-right: 11px;
+  user-select: none;
+  &:hover {
+    border: 1px solid $color-checkbox-border-hover;
+  }
+}
+
+.checkbox-checked {
+  position: relative;
+  background: $color-accent;
+  border: 0;
+  &::after {
+    content: '';
+    width: 5px;
+    height: 9px;
+    top: 4px;
+    left: 7.6px;
+    border-right: 3px solid $color-white;
+    border-bottom: 3px solid $color-white;
+    position: absolute;
+    transform: rotate(45deg);
+  }
+}

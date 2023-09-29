@@ -1,22 +1,10 @@
-// %font-SegoeUI-Bold {
-//   font-family: SegoeUI-Bold, Verdana, sans-serif;
-//   font-weight: 700;
-//   font-style: normal;
-// }
-// %font-SegoeUI-SemiBold {
-//   font-family: SegoeUI-SemiBold, Verdana, sans-serif;
-//   font-weight: 600;
-//   font-style: normal;
-// }
-%font-SegoeUI {
-  font-family: SegoeUI, Verdana, sans-serif;
-  font-style: normal;
+%font-SegoeUI-Bold {
+  font-family: SegoeUI-Bold, Geneva, Verdana, Arial, sans-serif;
 }
-// %font-SegoeUI-Light {
-//   font-family: SegoeUI-Light, Verdana, sans-serif;
-//   font-weight: 300;
-//   font-style: normal;
-// }
+%font-SegoeUI-SemiBold {
+  font-family: SegoeUI-SemiBold, Geneva, Verdana, Arial, sans-serif;
+}
+
 %transition {
   transition: all 0.5s ease-out;
 }

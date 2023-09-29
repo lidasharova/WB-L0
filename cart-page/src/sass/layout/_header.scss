@@ -69,8 +69,10 @@
 .header__logo {
   width: 109px;
   color: $color-white;
+  @extend %font-SegoeUI-SemiBold;
 
-  @include font(23px, 24px, 400, 0.002px);
+  @include font(24px, 24px, 600, 0.02em);
+  text-align: left;
 
   cursor: pointer;
 
@@ -123,7 +125,7 @@
 #search__input::placeholder {
   color: $color-white-transparent-45;
 
-  @include font(18px, 24px);
+  @include font(18px, 24px, 400, -0.03em);
 }
 
 .header__link__profile,
@@ -163,6 +165,7 @@
 .cart__notify {
   display: none;
   @include font(10px, 18px, 700);
+  @extend %font-SegoeUI-Bold;
   text-align: center;
   color: $color-white;
   min-width: 16px;
