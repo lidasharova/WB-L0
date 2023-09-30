@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
-  <title>Товары <span>и Точка</span></title>
+  <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet" />
+  <title>Товары и Точка</title>
 </head>
 
 <body>
@@ -44,69 +44,58 @@
       <div class="main__content">
         <section class="cart__list">
           <h1 class="cart__title">Корзина</h1>
-          <div class="cart-accordion cart-accordion__available ">
+          <div class="cart-accordion cart-accordion__available">
             <div class="cart-accordion__info">
               <span class="checkbox__decor"></span>
               <span class="checkbox-text__text check__all">Выбрать все</span>
             </div>
             <div class="cart-accordion__icon_open"></div>
           </div>
+          <div class="cart-list__items__wrapper">
+          </div>
 
-          <div class="cart-list__item__wrapper">
-            <div class="cart-list__item__product">
-              <span class="checkbox__decor"></span>
-              <div class="list-item__product__img" id="t-shirt"></div>
+          <div class="cart-accordion cart-accordion__soldout">
+            <div class="cart-accordion__info">
+              <span class="cart-accordion__count">Отсутствуют · 3 товара</span>
+              <span class="cart-accordion__price"></span>
+            </div>
+            <div class="cart-accordion__icon_open"></div>
+          </div>
+          <div class="cart-list__items-out__wrapper"></div>
+
+
+          <!-- 
+          <div class="cart-list__items-out__wrapper">
+            <div class="cart-list__item__product" data-id="t-shirt-01">
+              <div class="list-item__product__img" data-id="t-shirt-01"></div>
               <div class="list-item__product__info">
                 <div class="list-item__product__name">Футболка UZcotton мужская</div>
                 <div class="list-item__product__options">
                   <span class="list-item__product__color">Цвет: белый</span>
                   <span class="list-item__product__size">Размер: 56</span>
                 </div>
-                <div class="list-item__product__stock">Коледино WB</div>
-                <div class="list-item__product__options provider-color">
-                  <span class="list-item__product__provider">OOO Вайлдберриз</span>
-                  <span class="provider-info__icon"></span>
-                </div>
               </div>
             </div>
-
             <div class="list-item__action">
-
               <div class="list-item__count__container">
-                <div class="list-item__count__wrapper">
-                  <button type="button" class="list-item__count__btn count-minus"></button>
-                  <div class="list-item__count">1</div>
-                  <button type="button" class="list-item__count__btn count-plus"></button>
-                </div>
-                <div class="list-item__count__left-text">Осталось 2 шт.</div>
-                <div class="list-item__buttons-wrapper">
-                  <span class="list-item__favorite-button item-icon-btn"></span>
-                  <span class="list-item__delete-button item-icon-btn"></span>
-                </div>
-              </div>
-
-              <div class="list-item__price__wrapper">
-                <h3 class="list-item__new-price"><span class="new-price">522</span>
-                  <span class="list-item__currency">COM</span>
-                </h3>
-                <div class="list-item__old-price">
-                  1051 сом
+                <div class="list-item__buttons-wrapper buttons-wrapper-out ">
+                  <span class="list-item__favorite-button item-icon-btn" data-id="t-shirt-01"></span>
+                  <span class="list-item__delete-button item-icon-btn" data-id="t-shirt-01"></span>
                 </div>
               </div>
             </div>
+          </div> -->
 
-          </div>
-          <div class="cart-accordion cart-accordion__soldout">
+
+
+
+          <!-- <div class="cart-accordion cart-accordion__soldout">
             <div class="cart-accordion__info">
               <span class="cart-accordion__count">266 товаров</span>
               <span class="cart-accordion__price">2 100 569</span>
             </div>
             <div class="cart-accordion__icon_open"></div>
-          </div>
-
-
-
-
+          </div> -->
 
 
 
@@ -128,8 +117,8 @@
         </section>
         <section class="form delivery__form">
           <div class="delivery__header">
-            <h2 class="form__title">Способ доставки</h2><button
-              class="change__button delivery__change__button">Изменить</button>
+            <h2 class="form__title">Способ доставки</h2>
+            <button class="change__button delivery__change__button">Изменить</button>
           </div>
 
           <div class="delivery__table">
@@ -147,9 +136,7 @@
               <span class="delivery__cost__data">Бесплатно</span>
             </div>
             <div class="delivery__date__item">
-              <div class="delivery__table__item delivery__date">
-                5—6 февраля
-              </div>
+              <div class="delivery__table__item delivery__date">5—6 февраля</div>
               <div class="delivery__date__photos__wrapper">
                 <ul class="delivery__date__photos">
                   <li class="delivery__date__photo"></li>
@@ -157,9 +144,7 @@
               </div>
             </div>
             <div class="delivery__date__item">
-              <div class="delivery__table__item delivery__date">
-                7—8 февраля
-              </div>
+              <div class="delivery__table__item delivery__date">7—8 февраля</div>
               <div class="delivery__date__photos__wrapper">
                 <ul class="delivery__date__photos">
                   <li class="delivery__date__photo"></li>
@@ -169,19 +154,17 @@
           </div>
           <div class="delivery__conditions__wrapper">
             <span class="conditions__icon"></span>
-            <div class="conditions__text">Обратная доставка товаров на склад при отказе — <a class="conditions__link"
-                href="#">бесплатно</a>
+            <div class="conditions__text">
+              Обратная доставка товаров на склад при отказе —
+              <a class="conditions__link" href="#">бесплатно</a>
             </div>
-
           </div>
         </section>
         <section class="form payment__form">
           <h2 class="form__title">Способ оплаты</h2>
-
         </section>
         <section class="form user__form">
           <h2 class="form__title">Получатель</h2>
-
         </section>
       </div>
       <section class="cart__order"></section>

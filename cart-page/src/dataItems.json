@@ -1,6 +1,6 @@
 [
   {
-    "id":"t-shirt",
+    "id": "t-shirt-01",
     "name": "Футболка UZcotton мужская",
     "color": "Цвет: белый",
     "size": "Размер: 56",
@@ -9,33 +9,33 @@
     "newPrice": 522,
     "oldPrice": 1051,
     "currentCount": 1,
-    "imgUrl": "src/assets/img/cart-items/t-shirt.png",
-    "iconUrl": "src/assets/img/delivery/t-shirt-icon.png",
-    "imgSoldout": "src/assets/img/cart-soldout/t-shirt-out.png"
+    "maxCount": 2,
+    "img": "src/assets/img/cart-items/t-shirt.png",
+    "iconUrl": "src/assets/img/delivery/t-shirt-icon.png"
   },
   {
-    "id": "case",
+    "id": "case-02",
     "name": "Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe",
     "color": "Цвет: прозрачный",
     "stock": "Коледино WB",
     "provider": "OOO Мегапрофстиль",
-    "newPrice": 11500,
-    "oldPrice": 11500,
+    "newPrice": 2100047,
+    "oldPrice": 2300047,
     "currentCount": 200,
-    "imgUrl": "src/assets/img/cart-items/case.png",
-    "iconUrl": "src/assets/img/delivery/case-icon.png",
-    "imgSoldout": "src/assets/img/cart-soldout/case-out.png"
+    "maxCount": 250,
+    "img": "src/assets/img/cart-items/case.png",
+    "iconUrl": "src/assets/img/delivery/case-icon.png"
   },
   {
-    "id": "pencils",
-    "name": "Карандаши цветные Faber-Castell 'Замок', набор 24 цвета, заточенные, шестигранные, Faber-Castell",
+    "id": "pencils-03",
+    "name": "Карандаши цветные Faber-Castell  \"Замок\" , набор 24 цвета, заточенные, шестигранные,____ Faber-Castell",
     "stock": "Коледино WB",
     "provider": "OOO Вайлдберриз",
     "newPrice": 494,
     "oldPrice": 950,
     "currentCount": 2,
-    "imgUrl": "src/assets/img/cart-items/pencils.png",
-    "iconUrl": "src/assets/img/delivery/pencils-icon.png",
-    "imgSoldout": "src/assets/img/cart-soldout/pencils-out.png"
+    "maxCount": 2,
+    "img": "src/assets/img/cart-items/pencils.png",
+    "iconUrl": "src/assets/img/delivery/pencils-icon.png"
   }
 ]

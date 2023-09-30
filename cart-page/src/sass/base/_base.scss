@@ -14,14 +14,15 @@
 
 @font-face {
   font-family: SegoeUI-Bold;
-  src: url('/assets/fonts/SegoeUI/SegoeUI-Bold.ttf') format('ttf');
-  src: url('/assets/fonts/SegoeUI/SegoeUI-Bold.woff') format('woff');
-  src: url('/assets/fonts/SegoeUI/SegoeUI-Bold.woff2') format('woff2');
+  // src: url('src/assets/fonts/SegoeUI/SegoeUI-Bold.ttf') format('ttf');
+  src: url('src//assets/fonts/SegoeUI/SegoeUI-Bold.woff') format('woff');
+  src: url('src//assets/fonts/SegoeUI/SegoeUI-Bold.woff2') format('woff2');
   font-display: swap;
 }
 
 body {
   font-family: SegoeUI, Verdana, Arial, sans-serif;
+  // font-family: 'Segoe UI', Geneva, Verdana, sans-serif;
 }
 
 html {
