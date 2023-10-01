@@ -1,7 +1,6 @@
-export const createProductCard = (products) => {
-  //находим контейнер
+export const createProductsCard = (products) => {
   const cardsWrapper = document.querySelector('.cart-list__items__wrapper');
-  //отрисуем карточки текущих товаров
+
   products.forEach((product) => {
     const itemWrapper = document.createElement('div');
     itemWrapper.className = 'cart-list__item__wrapper';
@@ -69,17 +68,17 @@ export const createProductCard = (products) => {
     countWrapper.className = 'list-item__count__wrapper';
 
     const countBtnMinus = document.createElement('button');
-    countBtnMinus.className = 'list-item__count__btn count-minus';
+    countBtnMinus.className = 'list-item__count__btn minus count-minus';
     countBtnMinus.type = 'button';
     countBtnMinus.dataset.id = product.id;
 
     const count = document.createElement('div');
     count.className = 'list-item__count';
-    count.textContent = product.currentCount;
+    count.textContent = product.count;
     count.dataset.id = product.id;
 
     const countBtnPlus = document.createElement('button');
-    countBtnPlus.className = 'list-item__count__btn count-plus';
+    countBtnPlus.className = 'list-item__count__btn plus count-plus';
     countBtnPlus.type = 'button';
     countBtnPlus.dataset.id = product.id;
 

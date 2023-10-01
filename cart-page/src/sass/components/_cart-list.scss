@@ -211,19 +211,6 @@
   height: 23px;
 }
 
-.count-minus {
-  background-image: url('src/assets/svg/card/minus.svg');
-  &:hover {
-    background-image: url('src/assets/svg/card/minus-hover.svg');
-  }
-}
-.count-plus {
-  background-image: url('src/assets/svg/card/plus.svg');
-  &:hover {
-    background-image: url('src/assets/svg/card/plus-hover.svg');
-  }
-}
-
 .list-item__count__left-text {
   @include font(13px, 16px, 400, -0.05em);
   margin-bottom: 7px;
@@ -294,11 +281,11 @@
   }
 }
 
-.list-item__currency {
-  @include font(13px, 24px, 700);
-  @extend %font-SegoeUI-Bold;
-  text-align: right;
-}
+// .list-item__currency {
+//   @include font(13px, 24px, 700);
+//   @extend %font-SegoeUI-Bold;
+//   text-align: right;
+// }
 
 .provider-info__icon {
   @include background-icon(20px, 20px);
@@ -323,4 +310,27 @@
   justify-content: space-between;
   margin-bottom: 20px;
   color: $color-gray;
+}
+
+.count-minus {
+  background-image: url('src/assets/svg/card/minus.svg');
+  &:hover {
+    background-image: url('src/assets/svg/card/minus-hover.svg');
+  }
+}
+.count-plus {
+  background-image: url('src/assets/svg/card/plus.svg');
+  &:hover {
+    background-image: url('src/assets/svg/card/plus-hover.svg');
+  }
+}
+
+.count-minus_disabled {
+  background-image: url('src/assets/svg/card/minus-disabled.svg') !important;
+  cursor: default;
+}
+
+.count-plus_disabled {
+  background-image: url('src/assets/svg/card/plus-disabled.svg');
+  cursor: default;
 }

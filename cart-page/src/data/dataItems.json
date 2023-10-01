@@ -8,7 +8,7 @@
     "provider": "OOO Вайлдберриз",
     "newPrice": 522,
     "oldPrice": 1051,
-    "currentCount": 1,
+    "count": 1,
     "maxCount": 2,
     "img": "src/assets/img/cart-items/t-shirt.png",
     "iconUrl": "src/assets/img/delivery/t-shirt-icon.png"
@@ -21,7 +21,7 @@
     "provider": "OOO Мегапрофстиль",
     "newPrice": 2100047,
     "oldPrice": 2300047,
-    "currentCount": 200,
+    "count": 200,
     "maxCount": 250,
     "img": "src/assets/img/cart-items/case.png",
     "iconUrl": "src/assets/img/delivery/case-icon.png"
@@ -33,7 +33,7 @@
     "provider": "OOO Вайлдберриз",
     "newPrice": 494,
     "oldPrice": 950,
-    "currentCount": 2,
+    "count": 2,
     "maxCount": 2,
     "img": "src/assets/img/cart-items/pencils.png",
     "iconUrl": "src/assets/img/delivery/pencils-icon.png"
