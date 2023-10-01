@@ -1,3 +1,5 @@
+import { calculateNewPrice } from '/src/modules/helpers/calculateNewPrice.js';
+import { calculateOldPrice } from '/src/modules/helpers/calculateOldPrice.js';
 export const createProductsCard = (products) => {
   const cardsWrapper = document.querySelector('.cart-list__items__wrapper');
 
@@ -68,7 +70,12 @@ export const createProductsCard = (products) => {
     countWrapper.className = 'list-item__count__wrapper';
 
     const countBtnMinus = document.createElement('button');
-    countBtnMinus.className = 'list-item__count__btn minus count-minus';
+
+    if (product.count <= 1) {
+      countBtnMinus.className = 'list-item__count__btn minus count-minus_disabled';
+    } else {
+      countBtnMinus.className = 'list-item__count__btn minus count-minus';
+    }
     countBtnMinus.type = 'button';
     countBtnMinus.dataset.id = product.id;
 
@@ -78,7 +85,11 @@ export const createProductsCard = (products) => {
     count.dataset.id = product.id;
 
     const countBtnPlus = document.createElement('button');
-    countBtnPlus.className = 'list-item__count__btn plus count-plus';
+    if (product.count === product.maxCount) {
+      countBtnPlus.className = 'list-item__count__btn plus count-plus_disabled';
+    } else {
+      countBtnPlus.className = 'list-item__count__btn plus count-plus';
+    }
     countBtnPlus.type = 'button';
     countBtnPlus.dataset.id = product.id;
 
@@ -105,12 +116,12 @@ export const createProductsCard = (products) => {
 
     const newPrice = document.createElement('h3');
     newPrice.className = 'list-item__new-price';
-    newPrice.textContent = `${product.newPrice} сом`;
+    newPrice.textContent = calculateNewPrice(product);
     newPrice.dataset.id = product.id;
 
     const oldPrice = document.createElement('div');
     oldPrice.className = 'list-item__old-price';
-    oldPrice.textContent = `${product.oldPrice} сом`;
+    oldPrice.textContent = calculateOldPrice(product);
     oldPrice.dataset.id = product.id;
 
     itemWrapper.append(card, action);

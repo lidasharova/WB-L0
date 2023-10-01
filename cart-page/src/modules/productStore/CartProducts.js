@@ -1,6 +1,7 @@
 import dataItems from '/src/data/dataItems.json';
 import { updateButtons } from '/src/modules/productCard/updateButtons.js';
 import { updateCountProduct } from '/src/modules/productCard/updateCountProduct.js';
+import { updatePrice } from '/src/modules/productCard/updatePrice.js';
 
 export class CartProducts {
   constructor() {
@@ -18,7 +19,7 @@ export class CartProducts {
     }
     updateButtons(idNewProduct, this.products);
     updateCountProduct(idNewProduct, newProduct.count);
-    console.log(this.products);
+    updatePrice(newProduct);
   }
 
   deleteProduct(idProduct) {
@@ -28,7 +29,7 @@ export class CartProducts {
     }
     updateButtons(idProduct, this.products);
     updateCountProduct(idProduct, findProduct.count);
-    console.log(this.products);
+    updatePrice(findProduct);
   }
 
   static getProducts() {

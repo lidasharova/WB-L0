@@ -260,8 +260,9 @@
 }
 
 .list-item__new-price {
+  white-space: nowrap;
   display: inline-block;
-  @include font(17px, 28px, 700, -0.01em);
+  @include font(16px, 28px, 700, -0.01em);
   text-align: right;
   @extend %font-SegoeUI-Bold;
 }
