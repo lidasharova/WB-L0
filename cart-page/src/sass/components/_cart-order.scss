@@ -23,7 +23,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  @include font(16px, 32px, 700, -0.17em);
+  @include font(16px, 32px, 700, -0.05em);
   @extend %font-SegoeUI-Bold;
 }
 

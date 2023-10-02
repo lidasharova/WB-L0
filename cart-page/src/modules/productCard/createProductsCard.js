@@ -116,12 +116,12 @@ export const createProductsCard = (products) => {
 
     const newPrice = document.createElement('h3');
     newPrice.className = 'list-item__new-price';
-    newPrice.textContent = calculateNewPrice(product);
+    newPrice.textContent = `${calculateNewPrice(product).toLocaleString('ru-RU')} сом`;
     newPrice.dataset.id = product.id;
 
     const oldPrice = document.createElement('div');
     oldPrice.className = 'list-item__old-price';
-    oldPrice.textContent = calculateOldPrice(product);
+    oldPrice.textContent = `${calculateOldPrice(product).toLocaleString('ru-RU')} сом`;
     oldPrice.dataset.id = product.id;
 
     itemWrapper.append(card, action);

@@ -1,7 +1,10 @@
 import dataItems from '/src/data/dataItems.json';
 import { updateButtons } from '/src/modules/productCard/updateButtons.js';
 import { updateCountProduct } from '/src/modules/productCard/updateCountProduct.js';
-import { updatePrice } from '/src/modules/productCard/updatePrice.js';
+import { updatePriceInCard } from '/src/modules/productCard/updatePriceInCard.js';
+import { changeTotalPrice } from '/src/modules/orderForm/changeTotalPrice.js';
+import { changeOldTotalPrice } from '/src/modules/orderForm/changeOldTotalPrice.js';
+import { changeDiscountSum } from '/src/modules/orderForm/changeDiscountSum.js';
 
 export class CartProducts {
   constructor() {
@@ -19,7 +22,10 @@ export class CartProducts {
     }
     updateButtons(idNewProduct, this.products);
     updateCountProduct(idNewProduct, newProduct.count);
-    updatePrice(newProduct);
+    updatePriceInCard(newProduct);
+    changeTotalPrice(this.products);
+    changeOldTotalPrice(this.products);
+    changeDiscountSum(this.products);
   }
 
   deleteProduct(idProduct) {
@@ -29,7 +35,10 @@ export class CartProducts {
     }
     updateButtons(idProduct, this.products);
     updateCountProduct(idProduct, findProduct.count);
-    updatePrice(findProduct);
+    updatePriceInCard(findProduct);
+    changeTotalPrice(this.products);
+    changeOldTotalPrice(this.products);
+    changeDiscountSum(this.products);
   }
 
   static getProducts() {
