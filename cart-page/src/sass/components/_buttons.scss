@@ -1,8 +1,8 @@
-.button-do-order {
+.main-button {
   @include font(16px, 24px, 700);
   background-color: $color-accent;
   color: rgba(255, 255, 255, 1);
-  @include font(16px, 24px, 700, -0.1em);
+  @include font(16px, 24px);
   border-radius: 8px;
   border: none;
   width: 381px;
@@ -12,4 +12,11 @@
   padding-right: 9px;
   padding-left: 3px;
   margin-bottom: 12px;
+  cursor: pointer;
+  @extend %transition;
+  &:hover {
+    background-color: $color-btn-hover;
+  }
 }
+
+

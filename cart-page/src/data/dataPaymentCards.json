@@ -1,0 +1,22 @@
+[
+  {
+    "id": "card-mir",
+    "icon": "/src/assets/svg/modal/mir-icon.svg",
+    "number": "1234 56•• •••• 1234"
+  },
+  {
+    "id": "card-visa",
+    "icon": "/src/assets/svg/modal/visa-icon.svg",
+    "number": "3461 23•• •••• 7891"
+  },
+  {
+    "id": "card-master",
+    "icon": "/src/assets/svg/modal/master-icon.svg",
+    "number": "4321 56•• •••• 1679"
+  },
+  {
+    "id": "card-union",
+    "icon": "/src/assets/svg/modal/union-icon.svg",
+    "number": "5432 56•• •••• 9876"
+  }
+]
