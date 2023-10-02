@@ -17,7 +17,7 @@
 }
 
 .checkbox__decor {
-  display: block;
+  display: inline-block;
   width: 22px;
   height: 22px;
   background: #fff;
@@ -50,4 +50,8 @@
 .checkbox-card {
   align-self: start;
   margin-top: 38px;
+}
+
+.checkbox__decor.cart-order__checkbox-decor {
+  margin-right: 7px;
 }

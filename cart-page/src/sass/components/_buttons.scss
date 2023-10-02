@@ -1,0 +1,15 @@
+.button-do-order {
+  @include font(16px, 24px, 700);
+  background-color: $color-accent;
+  color: rgba(255, 255, 255, 1);
+  @include font(16px, 24px, 700, -0.1em);
+  border-radius: 8px;
+  border: none;
+  width: 381px;
+  height: 44px;
+  text-align: center;
+  padding-bottom: 4px;
+  padding-right: 9px;
+  padding-left: 3px;
+  margin-bottom: 12px;
+}

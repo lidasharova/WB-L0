@@ -282,20 +282,14 @@
   }
 }
 
-// .list-item__currency {
-//   @include font(13px, 24px, 700);
-//   @extend %font-SegoeUI-Bold;
-//   text-align: right;
-// }
-
 .provider-info__icon {
   @include background-icon(20px, 20px);
   margin-left: 6px;
   @extend %transition;
   cursor: pointer;
-  background-image: url('src/assets/svg/card/icon-info.svg');
+  background-image: url('/src/assets/svg/card/icon-info.svg');
   &:hover {
-    background-image: url('src/assets/svg/card/icon-info-hover.svg');
+    background-image: url('/src/assets/svg/card/icon-info-hover.svg');
   }
 }
 

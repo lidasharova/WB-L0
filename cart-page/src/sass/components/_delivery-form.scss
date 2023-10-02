@@ -104,7 +104,7 @@
 }
 
 .conditions__text {
-  @include font(13px, 16px, 400);
+  @include font(13px, 16px, 400, -0.06em);
 }
 
 .conditions__link {
