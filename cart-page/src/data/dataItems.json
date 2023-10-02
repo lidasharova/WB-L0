@@ -10,8 +10,8 @@
     "price": 1051,
     "count": 1,
     "maxCount": 2,
-    "img": "src/assets/img/cart-items/t-shirt.png",
-    "iconUrl": "src/assets/img/delivery/t-shirt-icon.png"
+    "img": "/src/assets/img/cart-items/t-shirt.png",
+    "iconUrl": "/src/assets/img/delivery/t-shirt-icon.png"
   },
   {
     "id": "case-02",
@@ -23,8 +23,8 @@
     "discount": 8.69547,
     "count": 200,
     "maxCount": 250,
-    "img": "src/assets/img/cart-items/case.png",
-    "iconUrl": "src/assets/img/delivery/case-icon.png"
+    "img": "/src/assets/img/cart-items/case.png",
+    "iconUrl": "/src/assets/img/delivery/case-icon.png"
   },
   {
     "id": "pencils-03",
@@ -35,7 +35,7 @@
     "price": 475,
     "count": 2,
     "maxCount": 2,
-    "img": "src/assets/img/cart-items/pencils.png",
-    "iconUrl": "src/assets/img/delivery/pencils-icon.png"
+    "img": "/src/assets/img/cart-items/pencils.png",
+    "iconUrl": "/src/assets/img/delivery/pencils-icon.png"
   }
 ]

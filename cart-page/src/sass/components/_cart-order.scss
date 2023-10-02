@@ -18,19 +18,30 @@
   flex-direction: column;
 }
 .cart-order__title-wrapper {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  @include font(16px, 32px, 700, -0.05em);
-  @extend %font-SegoeUI-Bold;
 }
 
 .cart-order__title,
 .cart-order__total-price {
   display: block;
+  @include font(24px, 32px, 700, -0.01em);
+  text-align: left;
 }
+
+.cart-order__total-price-wrapper {
+  display: flex;
+}
+
+.cart-order__total-price__currancy {
+  @include font(20px, 28px, 700, -0.01em);
+  margin-left: 4px;
+  align-self: flex-end;
+}
+
 .cart-order__main-info {
   @include font(16px, 24px, 400);
   margin-bottom: 24px;
@@ -54,7 +65,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 .cart-order__change-button {
   @include background-icon(20px, 20px);
@@ -68,11 +79,11 @@
 }
 
 .cart-order__section-title {
-  @include font(16px, 24px, 700, -0.1em);
+  @include font(16px, 24px, 700);
 }
 
 .cart-order__delivery-address {
-  @include font(13px, 16px, 400, -0.01em);
+  @include font(13px, 16px, 400);
 }
 .cart-order__delivery-date-link {
   @include font(13px, 16px);
@@ -81,6 +92,7 @@
   border-bottom: 1px dashed $color-accept-transparent-20;
   padding-bottom: 1px;
   width: 56px;
+  padding-top: 5px;
 }
 
 .cart-order__delivery-condition-wrapper {
@@ -99,14 +111,13 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 12px;
 }
 
 .cart-order__payment__pay-now__wrapper {
   background-color: $color-background-conditions;
   width: 381px;
   height: 66px;
-  padding: 8px 8px 12px 8px;
+  padding: 8px 8px 12px 7px;
   margin-top: 12px;
   margin-bottom: 24px;
   border-radius: 8px;
@@ -150,6 +161,7 @@
 .checkbox-text__text.check-pay-now,
 .cart-order__payment__conditions {
   @include font(13px, 16px, 400, 0em);
+  padding-bottom: 3px;
 }
 
 .cart-order__payment__card-number {

@@ -114,10 +114,17 @@ export const createProductsCard = (products) => {
     const priceWrapper = document.createElement('div');
     priceWrapper.className = 'list-item__price__wrapper';
 
+    const newPriceWrapper = document.createElement('div');
+    newPriceWrapper.className = 'list-item__new-price__wrapper';
+
     const newPrice = document.createElement('h3');
     newPrice.className = 'list-item__new-price';
-    newPrice.textContent = `${calculateNewPrice(product).toLocaleString('ru-RU')} сом`;
+    newPrice.textContent = `${calculateNewPrice(product).toLocaleString('ru-RU')}`;
     newPrice.dataset.id = product.id;
+
+    const currency = document.createElement('h4');
+    currency.className = 'list-item__currency';
+    currency.textContent = 'сом';
 
     const oldPrice = document.createElement('div');
     oldPrice.className = 'list-item__old-price';
@@ -133,7 +140,8 @@ export const createProductsCard = (products) => {
     providerContent.append(provider, providerIcon);
     countContainer.append(countWrapper, buttonsWrapper);
     action.append(countContainer, priceWrapper);
-    priceWrapper.append(newPrice, oldPrice);
+    priceWrapper.append(newPriceWrapper, oldPrice);
+    newPriceWrapper.append(newPrice, currency);
     countWrapper.append(countBtnMinus, count, countBtnPlus);
     countContainer.append(leftText);
     buttonsWrapper.append(favoriteBtn, deleteBtn);
