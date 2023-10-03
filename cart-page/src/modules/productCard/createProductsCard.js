@@ -1,5 +1,6 @@
 import { calculateNewPrice } from '/src/modules/helpers/calculateNewPrice.js';
 import { calculateOldPrice } from '/src/modules/helpers/calculateOldPrice.js';
+import { changeFontSizePrice } from '/src/modules/helpers/changeFontSizePrice.js';
 export const createProductsCard = (products) => {
   const cardsWrapper = document.querySelector('.cart-list__items__wrapper');
 
@@ -117,10 +118,12 @@ export const createProductsCard = (products) => {
     const newPriceWrapper = document.createElement('div');
     newPriceWrapper.className = 'list-item__new-price__wrapper';
 
+    const newPriceNumber = calculateNewPrice(product);
     const newPrice = document.createElement('h3');
     newPrice.className = 'list-item__new-price';
-    newPrice.textContent = `${calculateNewPrice(product).toLocaleString('ru-RU')}`;
+    newPrice.textContent = `${newPriceNumber.toLocaleString('ru-RU')}`;
     newPrice.dataset.id = product.id;
+    changeFontSizePrice(newPrice, newPriceNumber);
 
     const currency = document.createElement('h4');
     currency.className = 'list-item__currency';

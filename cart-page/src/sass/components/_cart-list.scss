@@ -7,7 +7,7 @@
   display: flex;
   max-width: $desktop-width;
   margin: 0 auto;
-  padding: 16px 24px;
+  padding: 16px 22px;
 
   @media (max-width: $mobile-width) {
     padding: 15px 16px;
@@ -27,14 +27,13 @@
 }
 .cart-accordion__available {
   border-bottom: 1px solid $color-border-accordion;
-  padding-bottom: 16px;
-  margin-bottom: 11px;
+  padding-bottom: 11px;
 }
 
 .cart-accordion__soldout {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
-  margin-bottom: 11px;
-  padding-bottom: 16px;
+  padding-bottom: 11px;
+  margin-top: 26px;
 }
 
 .cart-accordion__icon_open {
@@ -108,7 +107,8 @@
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  margin-top: 14px;
 }
 
 .cart-list__item__product {
@@ -122,16 +122,10 @@
   align-self: flex-start;
 }
 
-.list-item__product__info {
-  position: relative;
-  top: -8px;
-}
-
 .list-item__product__name {
-  @include font(16px, 24px, 400, -0.04em);
-  margin-bottom: 8px;
-  max-width: 275px;
-  padding-top: 12px;
+  @include font(16px, 24px, 400);
+  margin-bottom: 9px;
+  max-width: 250px;
 }
 
 .product__name-out {
@@ -139,21 +133,23 @@
 }
 
 .list-item__product__options {
-  @include font(13px, 16px, 400, -0.04em);
+  @include font(13px, 16px, 400);
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
 }
 
 .list-item__product__color {
   margin-right: 16px;
+  margin-bottom: 8px;
 }
 
+.list-item__product__size {
+  margin-bottom: 8px;
+}
 .provider-color,
 .list-item__product__stock {
-  @include font(13px, 16px, 400, -0.04em);
+  @include font(13px, 16px, 400);
   color: $color-gray;
-  margin-bottom: 2px;
 }
 
 // КНОПКИ
@@ -163,23 +159,20 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 16px;
   align-self: flex-start;
 }
 
 .list-item__count {
-  width: 110px;
+  width: 100px;
 }
 
 .list-item__count__container {
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
 .list-item__count__wrapper {
-  position: relative;
-  top: -3px;
-  left: 3px;
   width: 100px;
   height: 44px;
   display: flex;
@@ -187,11 +180,10 @@
   justify-content: center;
   border-radius: 8px;
   background-color: $color-white;
-  margin-bottom: 6px;
 }
 
 .list-item__count__btn {
-  @include background-icon(24px, 24px);
+  @include background-icon(25px, 20px);
   background: 0 0;
   padding: 0;
   border: none;
@@ -212,8 +204,7 @@
 }
 
 .list-item__count__left-text {
-  @include font(13px, 16px, 400, -0.05em);
-  margin-bottom: 7px;
+  @include font(13px, 16px, 400);
   align-self: flex-start;
   color: $color-orange;
 }
@@ -236,7 +227,7 @@
   &:hover {
     background-image: url('src/assets/svg/card/icon-favorite-hover.svg');
   }
-  margin-right: 15px;
+  margin-right: 14px;
 }
 
 .list-item__delete-button {
@@ -249,9 +240,6 @@
 // ЦЕНА
 
 .list-item__price__wrapper {
-  position: relative;
-  top: -4px;
-  left: 2px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -262,7 +250,6 @@
 .list-item__new-price__wrapper {
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .list-item__new-price {
@@ -277,8 +264,7 @@
   display: inline;
   @include font(16px, 24px, 700);
   text-align: right;
-  margin-left: 6px;
-  align-self: flex-end;
+  margin-left: 4px;
 }
 
 .list-item__old-price {

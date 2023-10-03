@@ -2,9 +2,10 @@ import dataItems from '/src/data/dataItems.json';
 import { updateButtons } from '/src/modules/productCard/updateButtons.js';
 import { updateCountProduct } from '/src/modules/productCard/updateCountProduct.js';
 import { updatePriceInCard } from '/src/modules/productCard/updatePriceInCard.js';
-import { changeTotalPrice } from '/src/modules/orderForm/changeTotalPrice.js';
-import { changeOldTotalPrice } from '/src/modules/orderForm/changeOldTotalPrice.js';
-import { changeDiscountSum } from '/src/modules/orderForm/changeDiscountSum.js';
+import { getTotalPrice } from '/src/modules/orderForm/getTotalPrice.js';
+import { getOldTotalPrice } from '/src/modules/orderForm/getOldTotalPrice.js';
+import { getDiscountSum } from '/src/modules/orderForm/getDiscountSum.js';
+import { changeButtonOrderText } from '/src/modules/orderForm/changeButtonOrderText.js';
 
 export class CartProducts {
   constructor() {
@@ -23,9 +24,10 @@ export class CartProducts {
     updateButtons(idNewProduct, this.products);
     updateCountProduct(idNewProduct, newProduct.count);
     updatePriceInCard(newProduct);
-    changeTotalPrice(this.products);
-    changeOldTotalPrice(this.products);
-    changeDiscountSum(this.products);
+    getTotalPrice(this.products);
+    getOldTotalPrice(this.products);
+    getDiscountSum(this.products);
+    changeButtonOrderText(this.products);
   }
 
   deleteProduct(idProduct) {
@@ -36,9 +38,10 @@ export class CartProducts {
     updateButtons(idProduct, this.products);
     updateCountProduct(idProduct, findProduct.count);
     updatePriceInCard(findProduct);
-    changeTotalPrice(this.products);
-    changeOldTotalPrice(this.products);
-    changeDiscountSum(this.products);
+    getTotalPrice(this.products);
+    getOldTotalPrice(this.products);
+    getDiscountSum(this.products);
+    changeButtonOrderText(this.products);
   }
 
   static getProducts() {
