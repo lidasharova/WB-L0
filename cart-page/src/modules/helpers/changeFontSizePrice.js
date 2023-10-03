@@ -1,16 +1,16 @@
-export const changeFontSizePrice = (newPrice, newPriceNumber) => {
+export const changeFontSizePrice = (newPriceElement, newPriceNumber) => {
   const maxFontSize = '20px';
   const maxLineHeight = '24px';
   const minFontSize = '16px';
   const minLineHeight = '28px';
   const letterSpacing = '-0.01em';
 
-  const threshold = 999;
+  const threshold = 100000;
   newPriceNumber > threshold
-    ? ((newPrice.style.fontSize = minFontSize),
-      (newPrice.style.lineHeight = minLineHeight),
-      (newPrice.style.letterSpacing = letterSpacing))
-    : ((newPrice.style.fontSize = maxFontSize),
-      (newPrice.style.lineHeight = maxLineHeight),
-      (newPrice.style.letterSpacing = 'normal'));
+    ? ((newPriceElement.style.fontSize = minFontSize),
+      (newPriceElement.style.lineHeight = minLineHeight),
+      (newPriceElement.style.letterSpacing = letterSpacing))
+    : ((newPriceElement.style.fontSize = maxFontSize),
+      (newPriceElement.style.lineHeight = maxLineHeight),
+      (newPriceElement.style.letterSpacing = 'normal'));
 };

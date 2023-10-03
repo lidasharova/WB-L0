@@ -118,7 +118,7 @@
         <section class="form delivery__form">
           <div class="delivery__header">
             <h2 class="form__title">Способ доставки</h2>
-            <button class="change__button delivery__change__button">Изменить</button>
+            <button class="change-button-text delivery__change-button-text">Изменить</button>
           </div>
 
           <div class="delivery__table">
@@ -160,8 +160,19 @@
             </div>
           </div>
         </section>
-        <section class="form payment__form">
-          <h2 class="form__title">Способ оплаты</h2>
+        <section class="form payment-form">
+          <div class="delivery__header">
+            <h2 class="form__title">Способ оплаты</h2>
+            <button class="change-button-text payment__change-button-text change-button-payment">Изменить</button>
+          </div>
+
+          <div class="payment-item-wrapper">
+            <div class="payment-card__icon icon-card-mir"></div>
+            <div class="payment-form__card-number payment__card-number">1234 12•• •••• 1234</div>
+          </div>
+          <div class="payment-form__payment-condition payment-condition">Спишем оплату с карты при получении</div>
+
+
         </section>
         <section class="form user__form">
           <h2 class="form__title">Получатель</h2>
@@ -198,7 +209,7 @@
 
             <div class="cart-order__section-header-wrapper">
               <h4 class="cart-order__section-title">Доставка в пункт выдачи</h4>
-              <span class="cart-order__change-button cart-order__change-button-delivery"></span>
+              <span class="cart-order__change-button-icon cart-order__change-button-icon-delivery"></span>
             </div>
 
             <span class="cart-order__delivery-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
@@ -216,11 +227,11 @@
           <div class="cart-order__payment-wrapper">
             <div class="cart-order__section-header-wrapper">
               <h4 class="cart-order__section-title">Оплата картой</h4>
-              <span class="cart-order__change-button cart-order__change-button-payment "></span>
+              <span class="cart-order__change-button-icon change-button-payment"></span>
             </div>
-            <div class="cart-order__payment-item-wrapper">
-              <div class="cart-order__payment-card__icon icon-card-mir"></div>
-              <div class="cart-order__payment__card-number">1234 12•• •••• 1234</div>
+            <div class="payment-item-wrapper">
+              <div class="payment-card__icon icon-card-mir"></div>
+              <div class="payment__card-number">1234 12•• •••• 1234</div>
             </div>
             <div class="cart-order__payment__pay-now__wrapper">
               <div class="check-pay-now__wrapper">
@@ -228,7 +239,7 @@
                 <span class="checkbox-text__text check-pay-now">Списать оплату сразу</span>
               </div>
 
-              <div class="cart-order__payment__conditions">Спишем оплату с карты при получении</div>
+              <div class="payment-condition cart-order__payment-condition">Спишем оплату с карты при получении</div>
             </div>
             <button type="button" class="main-button button-do-order">
               <h4 class="button-do-order__text">
@@ -242,14 +253,24 @@
                 target="_blank"> возврата</a>
             </div>
           </div>
+
+
+          <div class="overlay delivery-modal-overlay">
+            <div class="modal delivery-modal">
+              <div class="payment-modal-form modal-form payment-modal__content">
+
+              </div>
+            </div>
+          </div>
+
+
+
+
           <div class="overlay payment-modal-overlay">
             <div class="modal payment-modal">
               <div class="payment-modal-form modal-form payment-modal__content">
-
                 <h3 class="modal__title">Способ оплаты</h3>
                 <span class="modal__close-button"></span>
-
-
                 <div class="payment-modal__payment-content-wrapper">
                   <div class="payment-modal__payment-cards">
                     <div class="payment-card__wrapper">
@@ -281,20 +302,19 @@
                       </div>
                     </div>
                   </div>
-
                   <button type="button" class="main-button button-choose-payment-card modal-button">
                     <h4>
                       Выбрать
                     </h4>
                   </button>
                 </div>
-
-
-
               </div>
-
             </div>
           </div>
+
+
+
+
 
 
         </div>

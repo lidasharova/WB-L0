@@ -3,10 +3,9 @@
   position: relative;
   width: 429px;
   height: 572px;
-  margin-left: 32px;
+  margin-left: 34px;
   background-color: $color-white;
   top: 5px;
-  padding: 16px, 24px, 24px, 24px;
   border-radius: 16px;
   border: 1px solid rgba(0, 0, 0, 0.1137254902);
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1490196078);
@@ -66,16 +65,7 @@
   justify-content: space-between;
   margin-bottom: 5px;
 }
-.cart-order__change-button {
-  @include background-icon(20px, 20px);
-  background-image: url('/src/assets/svg/order/change-btn.svg');
-  cursor: pointer;
-  @extend %transition;
 
-  &:hover {
-    background-image: url('/src/assets/svg/order/change-btn-hover.svg');
-  }
-}
 
 .cart-order__section-title {
   @include font(16px, 24px, 700);
@@ -106,7 +96,7 @@
   justify-content: center;
 }
 
-.cart-order__payment-item-wrapper {
+.payment-item-wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -158,17 +148,17 @@
 }
 
 .checkbox-text__text.check-pay-now,
-.cart-order__payment__conditions {
+.payment-condition {
   @include font(13px, 16px, 400, 0em);
   margin-bottom: 6px;
 }
 
-.cart-order__payment__card-number {
+.payment__card-number {
   @include font(13px, 16px);
   text-align: right;
 }
 
-.cart-order__payment-card__icon {
+.payment-card__icon {
   @include background-icon(32px, 24px);
   margin-right: 8px;
 }

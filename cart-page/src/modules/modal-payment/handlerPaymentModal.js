@@ -1,7 +1,7 @@
 import { changePaymentCard } from '/src/modules/modal-payment/changePaymentCard.js';
 export const handlerPaymentModal = () => {
   let modalOpen = false;
-  const changePaymentCardButton = document.querySelector('.cart-order__change-button-payment');
+  const changePaymentCardButtons = document.querySelectorAll('.change-button-payment');
   const paymentModal = document.querySelector('.payment-modal');
   const closeButton = document.querySelector('.modal__close-button');
   const checkboxes = document.querySelectorAll('.checkbox-payment-card');
@@ -22,8 +22,10 @@ export const handlerPaymentModal = () => {
     clickedCheckbox.classList.add('checked');
   };
 
-  if (changePaymentCardButton) {
-    changePaymentCardButton.addEventListener('click', closeOpenPaymentModal);
+  if (changePaymentCardButtons.length > 0) {
+    changePaymentCardButtons.forEach((button) => {
+      button.addEventListener('click', closeOpenPaymentModal);
+    });
   }
   if (closeButton) {
     closeButton.addEventListener('click', closeOpenPaymentModal);

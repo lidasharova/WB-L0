@@ -6,6 +6,6 @@ export const getTotalPrice = (cart) => {
     sum += calculateNewPrice(cart[i]);
   }
 
-  totalPrice.textContent = `${sum.toLocaleString('ru-RU')} сом`;
+  totalPrice.textContent = `${sum.toLocaleString('ru-RU')}`;
   return sum;
 };
