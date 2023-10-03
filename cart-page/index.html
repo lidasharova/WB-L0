@@ -118,14 +118,15 @@
         <section class="form delivery__form">
           <div class="delivery__header">
             <h2 class="form__title">Способ доставки</h2>
-            <button class="change-button-text delivery__change-button-text">Изменить</button>
+            <button class="change-button-text change-button-delivery">Изменить</button>
           </div>
 
           <div class="delivery__table">
             <div class="delivery__address__wrapper">
               <div class="delivery__table__item">Пункт выдачи</div>
               <div class="address__data__wrapper">
-                <span class="delivery__address__data">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+                <span class="delivery__address__data delivery-current-address">Бишкек, улица Ахматбека Суюмбаева,
+                  12/1</span>
                 <span class="address__grade__star"></span>
                 <span class="address__grade">4.99</span>
                 <span class="address__office-hours">Ежедневно с 10 до 21</span>
@@ -205,14 +206,14 @@
             </div>
           </div>
 
-          <div class="cart-order__delivery-wrapper">
 
+          <div class="cart-order__delivery-wrapper">
             <div class="cart-order__section-header-wrapper">
               <h4 class="cart-order__section-title">Доставка в пункт выдачи</h4>
-              <span class="cart-order__change-button-icon cart-order__change-button-icon-delivery"></span>
+              <span class="cart-order__change-button-icon change-button-delivery"></span>
             </div>
-
-            <span class="cart-order__delivery-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+            <span class="cart-order__delivery-address delivery-current-address">Бишкек, улица Ахматбека Суюмбаева,
+              12/1</span>
             <a href="#" class="cart-order__delivery-date-link" target="_blank" class="cart-order__delivery-date">5–8
               фев</a>
             <div class="cart-order__delivery-condition-wrapper">
@@ -223,7 +224,6 @@
               </div>
             </div>
           </div>
-
           <div class="cart-order__payment-wrapper">
             <div class="cart-order__section-header-wrapper">
               <h4 class="cart-order__section-title">Оплата картой</h4>
@@ -255,22 +255,55 @@
           </div>
 
 
+          <!----- модалка доставки  --------------------------->
+
           <div class="overlay delivery-modal-overlay">
             <div class="modal delivery-modal">
-              <div class="payment-modal-form modal-form payment-modal__content">
+              <div class="delivery-modal-form modal-form delivery-modal__content">
+                <h3 class="modal__title">Способ доставки</h3>
+                <span class="modal__close-button delivery-modal__close"></span>
+                <div class="delivery-modal__methods-wrapper">
+                  <span class="delivery-modal__method-pickup delivery-method-button">В пункт выдачи</span>
+                  <span class="delivery-modal__method-courier delivery-method-button">Курьером</span>
+                </div>
+                <div class="delivery-modal__addresses-wrapper">
+                  <span class="delivery-modal__address-title">Мои адреса</span>
+                  <div class="delivery-modal__address-wrapper">
+                    <span class="circle-checkbox checkbox-delivery-address checked" data-id="address-1"></span>
+                    <span class="delivery-modal__address-text">Бишкек, улица Табышалиева, 57</span>
+                    <span class="delivery-modal__delete-icon item-icon-btn"></span>
+                  </div>
+                  <div class="delivery-modal__address-wrapper">
+                    <span class="circle-checkbox checkbox-delivery-address" data-id="address-2"></span>
+                    <span class="delivery-modal__address-text">Бишкек, улица Жукеева-Пудовкина, 77/1</span>
+                    <span class="delivery-modal__delete-icon item-icon-btn"></span>
+                  </div>
+                  <div class="delivery-modal__address-wrapper">
+                    <span class="circle-checkbox circle-checkbox-delivery checkbox-delivery-address"
+                      data-id="address-3"></span>
+                    <span class="delivery-modal__address-text">Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</span>
+                    <span class="delivery-modal__delete-icon item-icon-btn"></span>
+                  </div>
+                </div>
+                <button type="button" class="main-button button-choose-delivery-address modal-button">
+                  <h4>
+                    Выбрать
+                  </h4>
+                </button>
+
 
               </div>
             </div>
           </div>
 
 
-
+          <!----- модалка оплаты   --------------------------->
 
           <div class="overlay payment-modal-overlay">
             <div class="modal payment-modal">
               <div class="payment-modal-form modal-form payment-modal__content">
                 <h3 class="modal__title">Способ оплаты</h3>
-                <span class="modal__close-button"></span>
+                <span class="modal__close-button payment-modal__close"></span>
                 <div class="payment-modal__payment-content-wrapper">
                   <div class="payment-modal__payment-cards">
                     <div class="payment-card__wrapper">

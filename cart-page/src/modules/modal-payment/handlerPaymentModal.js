@@ -3,8 +3,9 @@ export const handlerPaymentModal = () => {
   let modalOpen = false;
   const changePaymentCardButtons = document.querySelectorAll('.change-button-payment');
   const paymentModal = document.querySelector('.payment-modal');
-  const closeButton = document.querySelector('.modal__close-button');
+  const closeButton = document.querySelector('.payment-modal__close');
   const checkboxes = document.querySelectorAll('.checkbox-payment-card');
+  console.log(checkboxes);
   const choosePaymentCardButton = document.querySelector('.button-choose-payment-card');
   let cardId = '';
 

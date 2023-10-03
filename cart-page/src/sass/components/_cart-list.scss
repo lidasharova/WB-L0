@@ -227,6 +227,9 @@
   &:hover {
     background-image: url('src/assets/svg/card/icon-favorite-hover.svg');
   }
+  &:active {
+    background-image: url('src/assets/svg/card/icon-favorite-active.svg');
+  }
   margin-right: 14px;
 }
 
@@ -258,6 +261,7 @@
   display: inline-block;
   @include font(20px, 28px, 700, -0.01em);
   text-align: right;
+  @extend %font-SegoeUI-Bold;
 }
 
 .list-item__currency {
@@ -265,6 +269,7 @@
   @include font(16px, 24px, 700);
   text-align: right;
   margin-left: 4px;
+  @extend %font-SegoeUI-Bold;
 }
 
 .list-item__old-price {

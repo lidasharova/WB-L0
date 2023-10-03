@@ -1,0 +1,56 @@
+.delivery-modal-form {
+  width: 500px;
+  height: 408px;
+}
+
+.delivery-modal__methods-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  width: 456px;
+}
+
+.delivery-method-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $color-accent;
+  width: 224px;
+  height: 36px;
+  padding: 0px 0px 2px 0px;
+  border-radius: 24px;
+  text-align: center;
+  @include font(13px, 16px, 700);
+  @extend %font-SegoeUI-Bold;
+}
+
+.delivery-modal__address-title {
+  @include font(13px, 16px, 700);
+  text-align: left;
+  @extend %font-SegoeUI-Bold;
+}
+.delivery-modal__addresses-wrapper {
+  height: 163px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.delivery-modal__address-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.delivery-modal__delete-icon {
+  margin-left: auto;
+}
+.delivery-modal__address-text {
+  max-width: 400px;
+  @include font(16px, 24px);
+}
+
+.delivery-modal__delete-icon {
+  background-image: url('/src/assets/svg/modal/delete-address-icon.svg');
+  &:hover {
+    background-image: url('/src/assets/svg/card/icon-delete-hover.svg');
+  }
+}

@@ -28,6 +28,7 @@
   display: block;
   @include font(24px, 32px, 700, -0.01em);
   text-align: left;
+  @extend %font-SegoeUI-Bold;
 }
 
 .cart-order__total-price-wrapper {
@@ -38,6 +39,7 @@
   @include font(20px, 28px, 700, -0.01em);
   margin-left: 4px;
   align-self: flex-end;
+  @extend %font-SegoeUI-Bold;
 }
 
 .cart-order__main-info {
@@ -66,9 +68,9 @@
   margin-bottom: 5px;
 }
 
-
 .cart-order__section-title {
   @include font(16px, 24px, 700);
+  @extend %font-SegoeUI-Bold;
 }
 
 .cart-order__delivery-address {

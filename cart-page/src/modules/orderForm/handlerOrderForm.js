@@ -1,9 +1,9 @@
 import { handlerPaymentModal } from '/src/modules/modal-payment/handlerPaymentModal.js';
 import { handlerCheckboxPayment } from '/src/modules/orderForm/handlerCheckboxPayment.js';
-// import { handlerCheckboxDelivery } from '/src/modules/orderForm/handlerCheckboxDelivery.js';
+import { handlerDeliveryModal } from '/src/modules/modal-delivery/handlerDeliveryModal .js';
 
 export const handlerOrderForm = () => {
+  handlerDeliveryModal();
   handlerPaymentModal();
   handlerCheckboxPayment();
-  // handlerCheckboxDelivery();
 };

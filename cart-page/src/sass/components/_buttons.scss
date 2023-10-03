@@ -1,5 +1,6 @@
 .main-button {
   @include font(16px, 24px, 700);
+  @extend %font-SegoeUI-Bold;
   background-color: $color-accent;
   color: rgba(255, 255, 255, 1);
   border-radius: 8px;
@@ -25,7 +26,7 @@
   margin: 0;
   cursor: pointer;
   @include font(16px, 24px, 700);
-  font-family: SegoeUI-Bold, Geneva, Verdana, Arial, sans-serif;
+  @extend %font-SegoeUI-Bold;
 
   text-align: right;
   color: $color-accent;
