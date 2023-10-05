@@ -1,12 +1,8 @@
 import dataItems from '@/data/dataItems.json';
-import { updateButtons } from '@/components/product-card/updateButtons.js';
-import { updateCountProduct } from '@/components/product-card/updateCountProduct.js';
-import { updatePriceInCard } from '@/components/product-card/updatePriceInCard.js';
+import { updateButtons } from '@/components/product-card/update-card/updateButtons.js';
+import { updateCountProduct } from '@/components/product-card/update-card/updateCountProduct.js';
+import { updatePriceInCard } from '@/components/product-card/update-card/updatePriceInCard.js';
 import { updatePrices } from '@/components/order-form/updatePrices.js';
-// import { getTotalPrice } from '@/components/order-form/getTotalPrice.js';
-// import { getOldTotalPrice } from '@/components/order-form/getOldTotalPrice.js';
-// import { getDiscountSum } from '@/components/order-form/getDiscountSum.js';
-// import { changeButtonOrderText } from '@/components/order-form/changeButtonOrderText.js';
 
 const availableProducts = dataItems.filter((product) => {
   return product.count > 0;

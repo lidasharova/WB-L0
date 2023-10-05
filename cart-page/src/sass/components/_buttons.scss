@@ -1,6 +1,7 @@
 .main-button {
   @include font(16px, 24px, 700);
   @extend %font-segoe-bold;
+
   background-color: $color-accent;
   color: $color-white;
   border-radius: 8px;
@@ -49,7 +50,6 @@
     background-image: url('/src/assets/svg/order/change-btn-hover.svg');
   }
 }
-
 .disabled-order-button {
   background-color: $color-gray;
   &:hover {

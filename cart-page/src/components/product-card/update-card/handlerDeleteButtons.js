@@ -1,4 +1,4 @@
-import { deleteProductCard } from '@/components/product-card/deleteProductCard.js';
+import { deleteProductCard } from '@/components/product-card/update-card/deleteProductCard.js';
 import { CartProducts } from '@/components/product-store/CartProducts.js';
 import { updatePrices } from '@/components/order-form/updatePrices.js';
 const cart = new CartProducts();

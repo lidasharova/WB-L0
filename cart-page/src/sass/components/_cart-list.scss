@@ -212,18 +212,18 @@
 }
 .list-item__favorite-button {
   margin-right: 14px;
-  background-image: url('src/assets/svg/card/icon-favorite.svg');
+  background-image: url('/src/assets/svg/card/icon-favorite.svg');
   &:hover {
-    background-image: url('src/assets/svg/card/icon-favorite-hover.svg');
+    background-image: url('/src/assets/svg/card/icon-favorite-hover.svg');
   }
   &:active {
-    background-image: url('src/assets/svg/card/icon-favorite-active.svg');
+    background-image: url('/src/assets/svg/card/icon-favorite-active.svg');
   }
 }
 .list-item__delete-button {
-  background-image: url('src/assets/svg/card/icon-delete.svg');
+  background-image: url('/src/assets/svg/card/icon-delete.svg');
   &:hover {
-    background-image: url('src/assets/svg/card/icon-delete-hover.svg');
+    background-image: url('/src/assets/svg/card/icon-delete-hover.svg');
   }
 }
 .list-item__price__wrapper {
