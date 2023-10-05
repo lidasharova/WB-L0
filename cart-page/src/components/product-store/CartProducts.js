@@ -4,6 +4,9 @@ import { updateCountProduct } from '@/components/product-card/update-card/update
 import { updatePriceInCard } from '@/components/product-card/update-card/updatePriceInCard.js';
 import { updatePrices } from '@/components/order-form/updatePrices.js';
 
+const mainCheckbox = document.querySelector('.checkbox__decor.main-checkbox');
+// const checkboxCards = document.querySelectorAll('.checkbox__decor.checkbox-card');
+
 const availableProducts = dataItems.filter((product) => {
   return product.count > 0;
 });
@@ -30,7 +33,6 @@ export class CartProducts {
     updateCountProduct(idNewProduct, newProduct.count);
     updateButtons(idNewProduct, this.products);
     updatePriceInCard(newProduct);
-    updatePrices(this.products);
   }
 
   decreaseCountProduct(idProduct) {
@@ -41,7 +43,10 @@ export class CartProducts {
     updateCountProduct(idProduct, product.count);
     updatePriceInCard(product);
     updateButtons(idProduct, this.products);
-    updatePrices(this.products);
+    if (mainCheckbox.classList.contains('checkbox-checked')) {
+      updatePrices(this.products);
+    }
+    // updatePrices(this.products);
   }
 
   deleteProduct(idProduct) {
@@ -50,7 +55,6 @@ export class CartProducts {
       const index = this.products.indexOf(product);
       this.products.splice(index, 1);
     }
-    updatePrices(this.products);
   }
 
   static getAvailableProducts() {

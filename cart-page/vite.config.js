@@ -5,7 +5,6 @@ export default defineConfig({
   plugins: [tsconfigPaths()],
   build: {
     outDir: 'dist',
-    emptyOutDir: true,
     assetsDir: 'assets',
   },
 });

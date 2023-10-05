@@ -1,6 +1,6 @@
 export const innerHtmlCardInfo = (product) => {
   return ` <div class="cart-list__item__product">
-  <span class="checkbox__decor checkbox-card" data-id="${product.id}"></span>
+  <span class="checkbox__decor checkbox-card checkbox-checked" data-id="${product.id}"></span>
   <div class="list-item__product__img" data-id="${product.id}" style="background-image: url(${
     product.img
   })"></div>
