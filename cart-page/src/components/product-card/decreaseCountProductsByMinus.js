@@ -1,4 +1,4 @@
-import { CartProducts } from '@/components/productStore/CartProducts.js';
+import { CartProducts } from '@/components/product-store/CartProducts.js';
 const cart = new CartProducts();
 
 export const decreaseCountProductsByMinus = () => {
@@ -6,7 +6,7 @@ export const decreaseCountProductsByMinus = () => {
   minusButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
       const productId = event.target.dataset.id;
-      cart.deleteProduct(productId);
+      cart.decreaseCountProduct(productId);
     });
   });
 };

@@ -88,6 +88,7 @@ export const createCardsOut = (products) => {
   products.forEach((product) => {
     const itemOutWrapper = document.createElement('div');
     itemOutWrapper.className = 'cart-list__item__wrapper';
+    itemOutWrapper.dataset.id = product.id;
 
     itemOutWrapper.innerHTML = `
       <div class="cart-list__item__product" data-id="${product.id}">
@@ -107,13 +108,15 @@ export const createCardsOut = (products) => {
       <div class="list-item__action">
         <div class="list-item__count__container">
           <div class="list-item__buttons-wrapper buttons-wrapper-out">
-            <span class="list-item__favorite-button item-icon-btn" data-id="${product.id}"></span>
+            <span class="list-item__favorite-button favorite-button-out item-icon-btn" data-id="${
+              product.id
+            }"></span>
             <span class="list-item__delete-button item-icon-btn" data-id="${product.id}"></span>
           </div>
         </div>
       </div>
     `;
 
-    cardsOutWrapper.appendChild(itemOutWrapper);
+    cardsOutWrapper.append(itemOutWrapper);
   });
 };

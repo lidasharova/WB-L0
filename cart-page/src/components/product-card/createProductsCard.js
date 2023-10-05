@@ -8,10 +8,10 @@ export const createProductsCard = (products) => {
   products.forEach((product) => {
     const itemWrapper = document.createElement('div');
     itemWrapper.className = 'cart-list__item__wrapper';
+    itemWrapper.dataset.id = product.id;
 
     const card = document.createElement('div');
     card.className = 'cart-list__item__product';
-    card.dataset.id = product.id;
 
     const checkbox = document.createElement('span');
     checkbox.className = 'checkbox__decor checkbox-card';
@@ -154,7 +154,7 @@ export const createProductsCard = (products) => {
 };
 
 // <div class="cart-list__items__wrapper">
-//   <div class="cart-list__item__wrapper">
+//   <div class="cart-list__item__wrapper data-id=`${product.id}`>
 //     <div class="cart-list__item__product" data-id="product_id_here">
 //       <span class="checkbox__decor checkbox-card" data-id="product_id_here"></span>
 //       <div class="list-item__product__img" data-id="product_id_here"></div>
@@ -194,3 +194,52 @@ export const createProductsCard = (products) => {
 //     </div>
 //   </div>
 // </div>
+
+`
+          <div class="cart-list__items-out__wrapper">
+            <div class="cart-list__item__product" data-id="t-shirt-01">
+              <div class="list-item__product__img" data-id="t-shirt-01"></div>
+              <div class="list-item__product__info">
+                <div class="list-item__product__name">Футболка UZcotton мужская</div>
+                <div class="list-item__product__options">
+                  <span class="list-item__product__color">Цвет: белый</span>
+                  <span class="list-item__product__size">Размер: 56</span>
+                </div>
+                <div class="list-item__product__stock">Коледино WB</div>
+                <div class="list-item__product__options provider-color">
+                  <span class="list-item__product__provider">OOO Вайлдберриз</span>
+                  <span class="provider-info__icon"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-item__action">
+
+              <div class="list-item__count__container">
+                <div class="list-item__count__wrapper">
+                  <button type="button" class="list-item__count__btn count-minus"></button>
+                  <div class="list-item__count">1</div>
+                  <button type="button" class="list-item__count__btn count-plus"></button>
+                </div>
+                <div class="list-item__count__left-text">Осталось 2 шт.</div>
+                <div class="list-item__buttons-wrapper">
+                  <span class="list-item__favorite-button item-icon-btn"></span>
+                  <span class="list-item__delete-button item-icon-btn"></span>
+                </div>
+              </div>
+
+              <div class="list-item__price__wrapper">
+                <h3 class="list-item__new-price"><span class="new-price">522</span>
+                  <span class="list-item__currency">COM</span>
+                </h3>
+                <div class="list-item__old-price">
+                  1051 сом
+                <div class="list-item__buttons-wrapper buttons-wrapper-out ">
+                  <span class="list-item__favorite-button item-icon-btn" data-id="t-shirt-01"></span>
+                  <span class="list-item__delete-button item-icon-btn" data-id="t-shirt-01"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          `;

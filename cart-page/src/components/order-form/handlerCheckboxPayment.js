@@ -1,6 +1,6 @@
-import { CartProducts } from '@/components/productStore/CartProducts.js';
-import { changeButtonOrderText } from '@/components/orderForm/changeButtonOrderText.js';
-const cart = CartProducts.getProducts().products;
+import { CartProducts } from '@/components/product-store/CartProducts.js';
+import { changeButtonOrderText } from '@/components/order-form/changeButtonOrderText.js';
+const cart = CartProducts.getAvailableProducts();
 
 export const handlerCheckboxPayment = () => {
   const checkbox = document.querySelector('.cart-order__checkbox-decor');

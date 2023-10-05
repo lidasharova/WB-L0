@@ -32,9 +32,6 @@
   width: 400px;
   height: 408px;
 }
-.open {
-  display: block;
-}
 .modal__title {
   @include font(20px, 28px, 700, -0.01em);
 
@@ -63,4 +60,12 @@
   height: 44px;
   align-self: flex-start;
   margin: 16px 0 24px;
+}
+
+.open {
+  display: block;
+}
+
+.modal.modal-order-button-disabled.open {
+  display: block;
 }

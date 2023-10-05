@@ -4,7 +4,7 @@ export const handlerDeliveryModal = () => {
   const deliveryModal = document.querySelector('.delivery-modal');
   const closeButton = document.querySelector('.delivery-modal__close');
   const checkboxes = document.querySelectorAll('.checkbox-delivery-address');
-  console.log(checkboxes);
+  // console.log(checkboxes);
   const chooseCurrentAddressButton = document.querySelector('.button-choose-delivery-address');
   let addressId = '';
   const closeOpenDeliveryModal = () => {
@@ -12,9 +12,9 @@ export const handlerDeliveryModal = () => {
   };
   const handleCheckboxClick = (event) => {
     const clickedCheckbox = event.target;
-    console.log(clickedCheckbox);
+    // console.log(clickedCheckbox);
     addressId = clickedCheckbox.dataset.id;
-    console.log(addressId);
+    // console.log(addressId);
     checkboxes.forEach((checkbox) => {
       checkbox.classList.remove('checked');
     });

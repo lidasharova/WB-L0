@@ -1,5 +1,5 @@
-import { getTotalPrice } from '@/components/orderForm/getTotalPrice.js';
-import { getOldTotalPrice } from '@/components/orderForm/getOldTotalPrice.js';
+import { getTotalPrice } from '@/components/order-form/getTotalPrice.js';
+import { getOldTotalPrice } from '@/components/order-form/getOldTotalPrice.js';
 
 export const getDiscountSum = (cart) => {
   const totalDiscountSum = document.querySelector('.cart-order__discount-price');
