@@ -18,17 +18,14 @@
   src: url('/src/assets/fonts/SegoeUI/SegoeUI-Bold.woff2') format('woff2');
   font-display: swap;
 }
-
 body {
   font-family: SegoeUI, Tahoma, Geneva, Verdana, sans-serif;
   color: $color-text;
 }
-
 html {
   scroll-behavior: smooth;
   background-color: $color-violet;
 }
-
 h1,
 h2,
 h3,

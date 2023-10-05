@@ -1,4 +1,4 @@
-import { calculateOldPrice } from '/src/modules/helpers/calculateOldPrice.js';
+import { calculateOldPrice } from '@/utils/calculateOldPrice.js';
 export const getOldTotalPrice = (cart) => {
   const totalOldPrice = document.querySelector('.cart-order__old-total-price');
   let sum = 0;

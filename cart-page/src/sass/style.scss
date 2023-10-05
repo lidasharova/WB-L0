@@ -1,19 +1,17 @@
-@import 'base/normalize';
-
-//Abstracts
+// Abstracts
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
 
-//Base
+// Base
 @import 'base/base';
 @import 'base/normalize';
 
-//Layout
+// Layout
 @import 'layout/container';
 @import 'layout/header';
 
-//Components
+// Components
 @import 'components/cart-list';
 @import 'components/cart-order';
 @import 'components/delivery-form';

@@ -7,11 +7,18 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "prettier": "prettier . --write"
+    "prettier": "prettier . --write",
+    "eslint": "eslint ./src",
+    "stylelint": "npx stylelint --fix 'src/**/*.scss'"
   },
   "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
     "prettier": "^3.0.3",
     "sass": "^1.68.0",
-    "vite": "^4.4.5"
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "vite": "^4.4.5",
+    "vite-tsconfig-paths": "^4.2.1"
   }
 }

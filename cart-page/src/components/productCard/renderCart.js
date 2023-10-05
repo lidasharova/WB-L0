@@ -1,5 +1,5 @@
-import { CartProducts } from '/src/modules/productStore/CartProducts.js';
-import productsOut from '/src/data/dataItemsSoldOut.json';
+import { CartProducts } from '@/components/productStore/CartProducts.js';
+import productsOut from '@/data/dataItemsSoldOut.json';
 import { createProductsCard } from './createProductsCard.js';
 import { createCardsOut } from './createCardsOut.js';
 

@@ -1,5 +1,5 @@
-import { CartProducts } from '/src/modules/productStore/CartProducts.js';
-import { changeButtonOrderText } from '/src/modules/orderForm/changeButtonOrderText.js';
+import { CartProducts } from '@/components/productStore/CartProducts.js';
+import { changeButtonOrderText } from '@/components/orderForm/changeButtonOrderText.js';
 const cart = CartProducts.getProducts().products;
 
 export const handlerCheckboxPayment = () => {

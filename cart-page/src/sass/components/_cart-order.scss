@@ -1,5 +1,5 @@
 .cart-order {
-  padding: 16px 24px 24px 24px;
+  padding: 16px 24px 24px;
   position: relative;
   width: 429px;
   height: 572px;
@@ -7,10 +7,9 @@
   background-color: $color-white;
   top: 5px;
   border-radius: 16px;
-  border: 1px solid rgba(0, 0, 0, 0.1137254902);
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1490196078);
+  border: 1px solid rgb(0 0 0 / 11.4%);
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14.9%);
 }
-
 .cart-order__wrapper {
   display: flex;
   flex-direction: column;
@@ -22,37 +21,39 @@
   flex-direction: row;
   justify-content: space-between;
 }
-
 .cart-order__title,
 .cart-order__total-price {
   display: block;
-  @include font(24px, 32px, 700, -0.01em);
-  text-align: left;
-  @extend %font-SegoeUI-Bold;
-}
 
+  @include font(24px, 32px, 700, -0.01em);
+
+  text-align: left;
+
+  @extend %font-segoe-bold;
+}
 .cart-order__total-price-wrapper {
   display: flex;
 }
-
 .cart-order__total-price__currancy {
   @include font(20px, 28px, 700, -0.01em);
+
   margin-left: 4px;
   align-self: flex-end;
-  @extend %font-SegoeUI-Bold;
-}
 
+  @extend %font-segoe-bold;
+}
 .cart-order__main-info {
   @include font(16px, 24px, 400);
+
   margin-bottom: 24px;
 }
 .cart-order__info-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   @include font(16px, 24px, 400);
 }
-
 .cart-order__delivery-wrapper {
   height: 129px;
   display: flex;
@@ -60,24 +61,22 @@
   justify-content: space-between;
   margin-bottom: 25px;
 }
-
 .cart-order__section-header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5px;
 }
-
 .cart-order__section-title {
   @include font(16px, 24px, 700);
-  @extend %font-SegoeUI-Bold;
+  @extend %font-segoe-bold;
 }
-
 .cart-order__delivery-address {
   @include font(13px, 16px, 400);
 }
 .cart-order__delivery-date-link {
   @include font(13px, 16px);
+
   color: $color-accent;
   text-decoration: none;
   border-bottom: 1px dashed $color-accept-transparent-20;
@@ -85,7 +84,6 @@
   width: 56px;
   padding-top: 5px;
 }
-
 .cart-order__delivery-condition-wrapper {
   background-color: $color-background-conditions;
   height: 52px;
@@ -97,13 +95,11 @@
   align-items: center;
   justify-content: center;
 }
-
 .payment-item-wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-
 .cart-order__payment__pay-now__wrapper {
   background-color: $color-background-conditions;
   width: 381px;
@@ -112,16 +108,15 @@
   margin-bottom: 27px;
   border-radius: 8px;
 }
-
 .check-pay-now__wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 6px;
   justify-content: flex-start;
 }
-
 .cart-order__payment__oferta-access {
   @include font(13px, 16px, 400, 0.01em);
+
   padding-left: 20px;
   position: relative;
   &::before {
@@ -137,30 +132,30 @@
     left: 1px;
   }
 }
-
 .cart-order__payment__oferta-link {
   @include font(13px, 16px);
+
   color: $color-text;
   text-decoration: none;
   border-bottom: 1px solid $color-oferta-link;
   padding-bottom: 1px;
 }
 .conditions__text.conditions__text-delivery {
-  @include font(13px, 16px, 400, 0em);
+  @include font(13px, 16px, 400, 0);
 }
-
 .checkbox-text__text.check-pay-now,
 .payment-condition {
-  @include font(13px, 16px, 400, 0em);
+  @include font(13px, 16px, 400, 0);
+
   margin-bottom: 6px;
 }
-
 .payment__card-number {
   @include font(13px, 16px);
+
   text-align: right;
 }
-
 .payment-card__icon {
   @include background-icon(32px, 24px);
+
   margin-right: 8px;
 }

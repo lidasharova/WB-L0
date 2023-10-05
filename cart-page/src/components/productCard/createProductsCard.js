@@ -1,6 +1,7 @@
-import { calculateNewPrice } from '/src/modules/helpers/calculateNewPrice.js';
-import { calculateOldPrice } from '/src/modules/helpers/calculateOldPrice.js';
-import { changeFontSizePrice } from '/src/modules/helpers/changeFontSizePrice.js';
+/* eslint-disable max-lines-per-function */
+import { calculateNewPrice } from '@/utils/calculateNewPrice.js';
+import { calculateOldPrice } from '@/utils/calculateOldPrice.js';
+import { changeFontSizePrice } from '@/utils/changeFontSizePrice.js';
 export const createProductsCard = (products) => {
   const cardsWrapper = document.querySelector('.cart-list__items__wrapper');
 
@@ -151,3 +152,45 @@ export const createProductsCard = (products) => {
     cardsWrapper.append(itemWrapper);
   });
 };
+
+// <div class="cart-list__items__wrapper">
+//   <div class="cart-list__item__wrapper">
+//     <div class="cart-list__item__product" data-id="product_id_here">
+//       <span class="checkbox__decor checkbox-card" data-id="product_id_here"></span>
+//       <div class="list-item__product__img" data-id="product_id_here"></div>
+//       <div class="list-item__product__info">
+//         <div class="list-item__product__name">Product Name</div>
+//         <div class="list-item__product__options">
+//           <span class="list-item__product__color">Color: Red</span>
+//           <span class="list-item__product__size">Size: Large</span>
+//         </div>
+//         <div class="list-item__product__stock">In Stock: 10</div>
+//         <div class="list-item__product__options provider-color">
+//           <span class="list-item__product__provider">Provider Name</span>
+//           <span class="provider-info__icon" data-id="product_id_here"></span>
+//         </div>
+//       </div>
+//     </div>
+//     <div class="list-item__action">
+//       <div class="list-item__count__container">
+//         <div class="list-item__count__wrapper">
+//           <button class="list-item__count__btn minus count-minus" type="button" data-id="product_id_here"></button>
+//           <div class="list-item__count" data-id="product_id_here">3</div>
+//           <button class="list-item__count__btn plus count-plus" type="button" data-id="product_id_here"></button>
+//         </div>
+//         <div class="list-item__count__left-text">Осталось 10 шт.</div>
+//       </div>
+//       <div class="list-item__buttons-wrapper">
+//         <span class="list-item__favorite-button item-icon-btn" data-id="product_id_here"></span>
+//         <span class="list-item__delete-button item-icon-btn" data-id="product_id_here"></span>
+//       </div>
+//     </div>
+//     <div class="list-item__price__wrapper">
+//       <div class="list-item__new-price__wrapper">
+//         <h3 class="list-item__new-price">1000 сом</h3>
+//         <h4 class="list-item__currency">сом</h4>
+//       </div>
+//       <div class="list-item__old-price" data-id="product_id_here">1200 сом</div>
+//     </div>
+//   </div>
+// </div>

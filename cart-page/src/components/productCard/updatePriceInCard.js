@@ -1,6 +1,6 @@
-import { calculateNewPrice } from '/src/modules/helpers/calculateNewPrice.js';
-import { calculateOldPrice } from '/src/modules/helpers/calculateOldPrice.js';
-import { changeFontSizePrice } from '/src/modules/helpers/changeFontSizePrice.js';
+import { calculateNewPrice } from '@/utils/calculateNewPrice.js';
+import { calculateOldPrice } from '@/utils/calculateOldPrice.js';
+import { changeFontSizePrice } from '@/utils/changeFontSizePrice.js';
 
 export function updatePriceInCard(product) {
   const oldPrice = document.querySelector(`[data-id="${product.id}"].list-item__old-price`);

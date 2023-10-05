@@ -1,4 +1,4 @@
-import { CartProducts } from '/src/modules/productStore/CartProducts.js';
+import { CartProducts } from '@/components/productStore/CartProducts.js';
 const cart = new CartProducts();
 
 export const increaseCountProductsByPlus = () => {

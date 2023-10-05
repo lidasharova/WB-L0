@@ -1,11 +1,11 @@
-import dataItems from '/src/data/dataItems.json';
-import { updateButtons } from '/src/modules/productCard/updateButtons.js';
-import { updateCountProduct } from '/src/modules/productCard/updateCountProduct.js';
-import { updatePriceInCard } from '/src/modules/productCard/updatePriceInCard.js';
-import { getTotalPrice } from '/src/modules/orderForm/getTotalPrice.js';
-import { getOldTotalPrice } from '/src/modules/orderForm/getOldTotalPrice.js';
-import { getDiscountSum } from '/src/modules/orderForm/getDiscountSum.js';
-import { changeButtonOrderText } from '/src/modules/orderForm/changeButtonOrderText.js';
+import dataItems from '@/data/dataItems.json';
+import { updateButtons } from '@/components/productCard/updateButtons.js';
+import { updateCountProduct } from '@/components/productCard/updateCountProduct.js';
+import { updatePriceInCard } from '@/components/productCard/updatePriceInCard.js';
+import { getTotalPrice } from '@/components/orderForm/getTotalPrice.js';
+import { getOldTotalPrice } from '@/components/orderForm/getOldTotalPrice.js';
+import { getDiscountSum } from '@/components/orderForm/getDiscountSum.js';
+import { changeButtonOrderText } from '@/components/orderForm/changeButtonOrderText.js';
 
 export class CartProducts {
   constructor() {

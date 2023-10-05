@@ -1,4 +1,4 @@
-import dataUserAddresses from '../../data/dataAddresses.json';
+import dataUserAddresses from '@/data/dataAddresses.json';
 const dataAddresses = dataUserAddresses;
 console.log(dataAddresses);
 

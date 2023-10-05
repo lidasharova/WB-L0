@@ -1,4 +1,4 @@
-import dataPaymentCards from '../../data/dataPaymentCards.json';
+import dataPaymentCards from '@/data/dataPaymentCards.json';
 const dataCards = dataPaymentCards;
 
 export function changePaymentCard(id) {

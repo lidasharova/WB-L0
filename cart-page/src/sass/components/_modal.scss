@@ -4,11 +4,9 @@
   width: 100%;
   height: 100%;
 }
-
 .delivery-modal {
   display: none;
 }
-
 .payment-modal {
   display: none;
 }
@@ -18,45 +16,44 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .modal-form {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 16px 22px 24px 22px;
+  padding: 16px 22px 24px;
   background-color: $color-white;
   border-radius: 16px;
-  border: 1px solid rgba(0, 0, 0, 0.1137254902);
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1490196078);
+  border: 1px solid rgb(0 0 0 / 11.4%);
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14.9%);
   z-index: 999;
 }
-
 .payment-modal-form {
   width: 400px;
   height: 408px;
 }
-
 .open {
   display: block;
 }
-
 .modal__title {
   @include font(20px, 28px, 700, -0.01em);
+
   text-align: left;
   padding: 0 24px 13px 0;
-  @extend %font-SegoeUI-Bold;
-}
 
+  @extend %font-segoe-bold;
+}
 .modal__close-button {
   background-image: url('/src/assets/svg/modal/modal-close.svg');
+
   @include background-icon(24px, 24px);
+
   position: absolute;
   cursor: pointer;
   top: 20px;
   right: 20px;
-  @extend %transition;
 
+  @extend %transition;
   &:hover {
     background-image: url('/src/assets/svg/modal/modal-close-hover.svg');
   }
@@ -65,5 +62,5 @@
   width: 164px;
   height: 44px;
   align-self: flex-start;
-  margin: 16px 0 24px 0;
+  margin: 16px 0 24px;
 }

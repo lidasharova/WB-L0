@@ -1,8 +1,9 @@
 .main-button {
   @include font(16px, 24px, 700);
-  @extend %font-SegoeUI-Bold;
+  @extend %font-segoe-bold;
+
   background-color: $color-accent;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255 255 255 / 100%);
   border-radius: 8px;
   border: none;
   width: 381px;
@@ -11,12 +12,12 @@
   text-align: center;
   margin-bottom: 13px;
   cursor: pointer;
+
   @extend %transition;
   &:hover {
     background-color: $color-btn-hover;
   }
 }
-
 .change-button-text {
   width: 78px;
   height: 32;
@@ -25,24 +26,26 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
+
   @include font(16px, 24px, 700);
-  @extend %font-SegoeUI-Bold;
+  @extend %font-segoe-bold;
 
   text-align: right;
   color: $color-accent;
+
   @extend %transition;
-  @extend %font-SegoeUI-Bold;
+  @extend %font-segoe-bold;
   &:hover {
     color: $color-deep-orange;
   }
 }
-
 .cart-order__change-button-icon {
   @include background-icon(20px, 20px);
+
   background-image: url('/src/assets/svg/order/change-btn.svg');
   cursor: pointer;
-  @extend %transition;
 
+  @extend %transition;
   &:hover {
     background-image: url('/src/assets/svg/order/change-btn-hover.svg');
   }

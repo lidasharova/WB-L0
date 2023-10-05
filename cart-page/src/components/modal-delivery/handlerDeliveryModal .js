@@ -1,4 +1,4 @@
-import { changeDeliveryAddress } from '/src/modules/modal-delivery/changeDeliveryAddress.js';
+import { changeDeliveryAddress } from '@/components/modal-delivery/changeDeliveryAddress.js';
 export const handlerDeliveryModal = () => {
   const changeDeliveryButtons = document.querySelectorAll('.change-button-delivery');
   const deliveryModal = document.querySelector('.delivery-modal');
@@ -7,11 +7,9 @@ export const handlerDeliveryModal = () => {
   console.log(checkboxes);
   const chooseCurrentAddressButton = document.querySelector('.button-choose-delivery-address');
   let addressId = '';
-
   const closeOpenDeliveryModal = () => {
     deliveryModal.classList.toggle('open');
   };
-
   const handleCheckboxClick = (event) => {
     const clickedCheckbox = event.target;
     console.log(clickedCheckbox);
@@ -22,7 +20,6 @@ export const handlerDeliveryModal = () => {
     });
     clickedCheckbox.classList.add('checked');
   };
-
   if (changeDeliveryButtons.length > 0) {
     changeDeliveryButtons.forEach((button) => {
       button.addEventListener('click', closeOpenDeliveryModal);
@@ -31,7 +28,6 @@ export const handlerDeliveryModal = () => {
   if (closeButton) {
     closeButton.addEventListener('click', closeOpenDeliveryModal);
   }
-
   if (chooseCurrentAddressButton) {
     chooseCurrentAddressButton.addEventListener('click', () => {
       changeDeliveryAddress(addressId);

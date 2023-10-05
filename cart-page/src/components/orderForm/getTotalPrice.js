@@ -1,4 +1,4 @@
-import { calculateNewPrice } from '/src/modules/helpers/calculateNewPrice.js';
+import { calculateNewPrice } from '@/utils/calculateNewPrice.js';
 export const getTotalPrice = (cart) => {
   const totalPrice = document.querySelector('.cart-order__total-price');
   let sum = 0;
