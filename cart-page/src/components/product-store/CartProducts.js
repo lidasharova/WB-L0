@@ -2,58 +2,68 @@ import dataItems from '@/data/dataItems.json';
 import { updateButtons } from '@/components/product-card/update-card/updateButtons.js';
 import { updateCountProduct } from '@/components/product-card/update-card/updateCountProduct.js';
 import { updatePriceInCard } from '@/components/product-card/update-card/updatePriceInCard.js';
-import { updatePrices } from '@/components/order-form/updatePrices.js';
+import { updateOrderForm } from '@/components/order-form/updateOrderForm.js';
+import { SelectedProducts } from './SelectedProducts';
 
-const mainCheckbox = document.querySelector('.checkbox__decor.main-checkbox');
-// const checkboxCards = document.querySelectorAll('.checkbox__decor.checkbox-card');
-
-const availableProducts = dataItems.filter((product) => {
-  return product.count > 0;
-});
-
-const soldOutProducts = dataItems.filter((product) => {
-  return product.count === 0;
-});
+const selectedProducts = SelectedProducts.getSelectedProducts().products;
 
 export class CartProducts {
   constructor() {
-    this.products = availableProducts;
-    this.productsOut = soldOutProducts;
+    this.availableProducts = dataItems.filter((product) => {
+      return product.count > 0;
+    });
+
+    this.soldOutProducts = dataItems.filter((product) => {
+      return product.count === 0;
+    });
   }
-  addProduct(idNewProduct) {
-    const newProduct = this.products.find((product) => product.id === idNewProduct);
+
+  increaseCountProduct(idProduct) {
+    const selectedProductsList = new SelectedProducts();
+    const newProduct = this.availableProducts.find((product) => product.id === idProduct);
+
     if (newProduct) {
       if (newProduct.count < newProduct.maxCount) {
         newProduct.count++;
+        updateCountProduct(idProduct, newProduct.count);
+        updatePriceInCard(newProduct);
+        updateButtons(idProduct, this.availableProducts);
+        const isProductInList = selectedProducts.some((product) => product.id === idProduct);
+        if (isProductInList) {
+          selectedProductsList.increaseSelectedProduct(idProduct);
+          updateOrderForm(selectedProducts);
+        }
+      } else {
+        console.log('Товар закончился');
       }
     } else {
-      const newProduct = { id: idNewProduct, count: 1 };
-      this.products.push(newProduct);
+      console.log('Товар не найден.');
     }
-    updateCountProduct(idNewProduct, newProduct.count);
-    updateButtons(idNewProduct, this.products);
-    updatePriceInCard(newProduct);
   }
 
   decreaseCountProduct(idProduct) {
-    const product = this.products.find((product) => product.id === idProduct);
+    const selectedProductsList = new SelectedProducts();
+    const product = this.availableProducts.find((product) => product.id === idProduct);
     if (product && product.count > 1) {
       product.count--;
+      updateCountProduct(idProduct, product.count);
+      updatePriceInCard(product);
+      updateButtons(idProduct, this.availableProducts);
+      const isProductInList = selectedProducts.some((product) => product.id === idProduct);
+      if (isProductInList) {
+        selectedProductsList.decreaseSelectedProduct(idProduct);
+        updateOrderForm(selectedProducts);
+      }
+    } else {
+      return null;
     }
-    updateCountProduct(idProduct, product.count);
-    updatePriceInCard(product);
-    updateButtons(idProduct, this.products);
-    if (mainCheckbox.classList.contains('checkbox-checked')) {
-      updatePrices(this.products);
-    }
-    // updatePrices(this.products);
   }
 
   deleteProduct(idProduct) {
-    const product = this.products.find((product) => product.id === idProduct);
+    const product = this.availableProducts.find((product) => product.id === idProduct);
     if (product) {
-      const index = this.products.indexOf(product);
-      this.products.splice(index, 1);
+      const index = this.availableProducts.indexOf(product);
+      this.availableProducts.splice(index, 1);
     }
   }
 
@@ -61,12 +71,12 @@ export class CartProducts {
     if (!this.instance) {
       this.instance = new CartProducts();
     }
-    return this.instance.products;
+    return this.instance.availableProducts;
   }
   static getSoldOutProducts() {
     if (!this.instance) {
       this.instance = new CartProducts();
     }
-    return this.instance.productsOut;
+    return this.instance.soldOutProducts;
   }
 }
