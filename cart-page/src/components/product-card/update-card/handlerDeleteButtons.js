@@ -6,27 +6,32 @@ const cart = new CartProducts();
 export const handlerDeleteButtons = () => {
   const deleteButtons = document.querySelectorAll('.list-item__delete-button');
   const mainCheckbox = document.querySelector('.checkbox__decor.main-checkbox');
-  console.log(deleteButtons);
   deleteButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
       const idProduct = event.target.dataset.id;
-      console.log(idProduct);
       deleteProductCard(idProduct);
       cart.deleteProduct(idProduct);
       const checkbox = document.querySelector(
         `[data-id="${idProduct}"].checkbox__decor.checkbox-card`
       );
-      console.log(checkbox);
       if (checkbox && checkbox.classList.contains('checkbox-checked')) {
         updatePrices(cart.products);
       } else if (mainCheckbox.classList.contains('checkbox-checked')) {
         updatePrices(cart.products);
       }
-      // updatePrices(cart.products);
-      console.log('корзина');
-      console.log(cart.products);
-      console.log('отсутствующие товары');
-      console.log(cart.productsOut);
+
+      // Проверяем, сколько товаров осталось в корзине
+      if (cart.products.length < 2) {
+        const accordion = document.querySelector('.cart-accordion__info');
+        if (accordion) {
+          accordion.classList.add('remove');
+        }
+      }
+
+      // console.log('корзина');
+      // console.log(cart.products);
+      // console.log('отсутствующие товары');
+      // console.log(cart.productsOut);
     });
   });
 };

@@ -44,19 +44,19 @@
     "color": "Цвет: белый",
     "size": "Размер: 56",
     "count": 0,
-    "img": "src/assets/img/cart-soldout/t-shirt-out.png"
+    "img": "/src/assets/img/cart-soldout/t-shirt-out.png"
   },
   {
     "id": "case-02-out",
     "name": "Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe",
     "color": "Цвет: прозрачный",
     "count": 0,
-    "img": "src/assets/img/cart-soldout/case-out.png"
+    "img": "/src/assets/img/cart-soldout/case-out.png"
   },
   {
     "id": "pencils-03-out",
     "name": "Карандаши цветные Faber-Castell \"Замок\", набор 24 цвета, заточенные, шестигранные, Faber-Castell",
     "count": 0,
-    "img": "src/assets/img/cart-soldout/pencils-out.png"
+    "img": "/src/assets/img/cart-soldout/pencils-out.png"
   }
 ]

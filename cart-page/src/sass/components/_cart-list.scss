@@ -300,22 +300,26 @@
   color: $color-gray;
 }
 .count-minus {
-  background-image: url('src/assets/svg/card/minus.svg');
+  background-image: url('/src/assets/svg/card/minus.svg');
   &:hover {
-    background-image: url('src/assets/svg/card/minus-hover.svg');
+    background-image: url('/src/assets/svg/card/minus-hover.svg');
   }
 }
 .count-plus {
-  background-image: url('src/assets/svg/card/plus.svg');
+  background-image: url('/src/assets/svg/card/plus.svg');
   &:hover {
-    background-image: url('src/assets/svg/card/plus-hover.svg');
+    background-image: url('/src/assets/svg/card/plus-hover.svg');
   }
 }
 .count-minus_disabled {
-  background-image: url('src/assets/svg/card/minus-disabled.svg') !important;
+  background-image: url('/src/assets/svg/card/minus-disabled.svg') !important;
   cursor: default;
 }
 .count-plus_disabled {
-  background-image: url('src/assets/svg/card/plus-disabled.svg');
+  background-image: url('/src/assets/svg/card/plus-disabled.svg');
   cursor: default;
+}
+
+.remove {
+  display: none;
 }
