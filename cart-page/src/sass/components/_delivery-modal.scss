@@ -10,25 +10,29 @@
   width: 456px;
 }
 .delivery-method-button {
+  @include font(13px, 16px, 700);
+  @extend %font-segoe-bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid $color-accent;
+  border: 2px solid $color-border-button-delivery;
   width: 224px;
   height: 36px;
   padding: 0 0 2px;
   border-radius: 24px;
   text-align: center;
-
-  @include font(13px, 16px, 700);
-  @extend %font-segoe-bold;
+  &:hover {
+    background-color: $color-border-button-delivery;
+  }
 }
+.delivery-method-button.current-delivery-method {
+  border: 2px solid $color-accent;
+}
+
 .delivery-modal__address-title {
   @include font(13px, 16px, 700);
-
-  text-align: left;
-
   @extend %font-segoe-bold;
+  text-align: left;
 }
 .delivery-modal__addresses-wrapper {
   height: 163px;
@@ -39,9 +43,10 @@
 .delivery-modal__address-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 18px;
 }
 .delivery-modal__address-text {
-  max-width: 400px;
+  max-width: 370px;
 
   @include font(16px, 24px);
 }
@@ -51,4 +56,42 @@
   &:hover {
     background-image: url('/src/assets/svg/card/icon-delete-hover.svg');
   }
+}
+
+.delivery-modal__addresses-wrapper.courier,
+.delivery-modal__addresses-wrapper.pickup {
+  display: none;
+  overflow: auto;
+}
+
+.delivery-modal__addresses-wrapper.courier.open,
+.delivery-modal__addresses-wrapper.pickup.open {
+  display: block;
+  margin-top: 12px;
+}
+
+.data-wrapper-pickup {
+  display: flex;
+}
+.delivery-modal__address__data__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.grade-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.address__pickup-text {
+  @include font(13px, 16px);
+  color: #a0a0a4;
+}
+
+.delivery-modal__address-wrapper.pickup-wrap-data {
+  display: block !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }

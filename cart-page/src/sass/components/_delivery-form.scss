@@ -19,14 +19,12 @@
   margin-bottom: 24px;
 }
 .address__grade__star {
-  background-image: url('/src/assets/svg/delivery/star.svg');
-
   @include background-icon(12px, 12px);
-
+  background-image: url('/src/assets/svg/delivery/star.svg');
   position: relative;
   top: 2px;
   left: 2px;
-  display: block;
+  display: inline-block;
   margin-right: 4px;
 }
 .address__grade {
@@ -53,7 +51,7 @@
 .address__data__wrapper {
   display: flex;
   flex-flow: row wrap;
-  width: 380px;
+  width: 350px;
 }
 .address__grade,
 .address__office-hours {
@@ -86,4 +84,7 @@
   color: $color-green;
   text-decoration: none;
   border-bottom: 1px dashed $color-green-transparent-20;
+}
+.delivery__address__data .delivery-current-address {
+  flex-basis: 100%;
 }

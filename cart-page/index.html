@@ -51,13 +51,9 @@
             </div>
             <div class="cart-accordion__icon_open"></div>
           </div>
-
-
           <!------карточки товаров----->
           <div class="cart-list__items__wrapper"></div>
           <!------карточки товаров----->
-
-
           <div class="cart-accordion cart-accordion__soldout">
             <div class="cart-accordion__info">
               <span class="cart-accordion__count">Отсутствуют · 3 товара</span>
@@ -67,51 +63,7 @@
           </div>
           <div class="cart-list__items-out__wrapper"></div>
 
-          <!--
-          <div class="cart-list__items-out__wrapper">
-            <div class="cart-list__item__product" data-id="t-shirt-01">
-              <div class="list-item__product__img" data-id="t-shirt-01"></div>
-              <div class="list-item__product__info">
-                <div class="list-item__product__name">Футболка UZcotton мужская</div>
-                <div class="list-item__product__options">
-                  <span class="list-item__product__color">Цвет: белый</span>
-                  <span class="list-item__product__size">Размер: 56</span>
-                </div>
-              </div>
-            </div>
-            <div class="list-item__action">
-              <div class="list-item__count__container">
-                <div class="list-item__buttons-wrapper buttons-wrapper-out ">
-                  <span class="list-item__favorite-button item-icon-btn" data-id="t-shirt-01"></span>
-                  <span class="list-item__delete-button item-icon-btn" data-id="t-shirt-01"></span>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="cart-accordion cart-accordion__soldout">
-            <div class="cart-accordion__info">
-              <span class="cart-accordion__count">266 товаров</span>
-              <span class="cart-accordion__price">2 100 569</span>
-            </div>
-            <div class="cart-accordion__icon_open"></div>
-          </div> -->
-
-          <!-- <div class="cart__accordion cart__accordion__available ">
-            <div class="cart__accordion__info">
-              <span class="cart__accordion__count">266 товаров</span>
-              <span class="cart__accordion__price">2 100 569</span>
-            </div>
-            <div class="cart__accordion__icon_open"></div>
-          </div>
-
-          <div class="cart__accordion cart__accordion__soldout">
-            <div class="cart__accordion__info">
-              <span class="cart__accordion__count">266 товаров</span>
-              <span class="cart__accordion__price">2 100 569</span>
-            </div>
-            <div class="cart__accordion__icon_open"></div>
-          </div> -->
+          <!-------------------------форма доставки ------------->
         </section>
         <section class="form delivery__form">
           <div class="delivery__header">
@@ -260,37 +212,101 @@
                 <h3 class="modal__title">Способ доставки</h3>
                 <span class="modal__close-button delivery-modal__close"></span>
                 <div class="delivery-modal__methods-wrapper">
-                  <span class="delivery-modal__method-pickup delivery-method-button">В пункт выдачи</span>
-                  <span class="delivery-modal__method-courier delivery-method-button">Курьером</span>
+                  <span class="delivery-modal__method-pickup delivery-method-button" data-id="pickup">В пункт
+                    выдачи</span>
+                  <span class="delivery-modal__method-courier delivery-method-button current-delivery-method"
+                    data-id="courier">Курьером</span>
                 </div>
-                <div class="delivery-modal__addresses-wrapper">
+                <div class="delivery-modal__addresses-main-wrapper">
                   <span class="delivery-modal__address-title">Мои адреса</span>
-                  <div class="delivery-modal__address-wrapper">
-                    <span class="circle-checkbox checkbox-delivery-address checked" data-id="address-1"></span>
-                    <span class="delivery-modal__address-text">Бишкек, улица Табышалиева, 57</span>
-                    <span class="delivery-modal__delete-icon item-icon-btn"></span>
+
+                  <!-------------адреса курьером-------------------------------------->
+                  <div class="delivery-modal__addresses-wrapper courier open">
+                    <div class="delivery-modal__address-wrapper" data-id="address-1">
+                      <span class="circle-checkbox checkbox-delivery-address checked" data-id="address-1"></span>
+                      <span class="delivery-modal__address-text">Бишкек, улица Табышалиева, 57</span>
+                      <span class="delivery-modal__delete-icon item-icon-btn" data-id="address-1"></span>
+                    </div>
+                    <div class="delivery-modal__address-wrapper " data-id="address-2">
+                      <span class="circle-checkbox checkbox-delivery-address" data-id="address-2"></span>
+                      <span class="delivery-modal__address-text">Бишкек, улица Жукеева-Пудовкина, 77/1</span>
+                      <span class="delivery-modal__delete-icon item-icon-btn" data-id="address-2"></span>
+                    </div>
+                    <div class="delivery-modal__address-wrapper" data-id="address-3">
+                      <span class="circle-checkbox checkbox-delivery-address" data-id="address-3"></span>
+                      <span class="delivery-modal__address-text">Бишкек, микрорайон Джал, улица Ахунбаева Исы,
+                        67/1</span>
+                      <span class="delivery-modal__delete-icon item-icon-btn" data-id="address-3"></span>
+                    </div>
                   </div>
-                  <div class="delivery-modal__address-wrapper">
-                    <span class="circle-checkbox checkbox-delivery-address" data-id="address-2"></span>
-                    <span class="delivery-modal__address-text">Бишкек, улица Жукеева-Пудовкина, 77/1</span>
-                    <span class="delivery-modal__delete-icon item-icon-btn"></span>
+                  <!-------------адреса в пункт выдачи -------------------------------------->
+                  <div class="delivery-modal__addresses-wrapper pickup">
+                    <div class="delivery-modal__address-wrapper pickup-wrap-data" data-id="pickup-address-1">
+                      <div class="delivery-modal__address__data__wrapper data-wrapper-pickup">
+                        <span class="circle-checkbox checkbox-delivery-address" data-id="pickup-address-1"></span>
+                        <div class="delivery-modal__address__data__wrap">
+                          <span class="delivery-modal__address-text">г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д.
+                            67/1</span>
+                          <div class="grade-wrap">
+                            <span class="address__grade__star"></span>
+                            <span class="address__grade"></span>
+                            <span class="address__pickup-text">Пункт выдачи</span>
+                          </div>
+                        </div>
+                        <span class="delivery-modal__delete-icon item-icon-btn" data-id="pickup-address-1"></span>
+                      </div>
+                    </div>
+
+
+                    <div class="delivery-modal__address-wrapper pickup-wrap-data" data-id="pickup-address-2">
+                      <div class="delivery-modal__address__data__wrapper data-wrapper-pickup">
+                        <span class="circle-checkbox checkbox-delivery-address" data-id="pickup-address-2"></span>
+                        <div class="delivery-modal__address__data__wrap">
+                          <span class="delivery-modal__address-text">г. Бишкек, микрорайон Джал, улица Ахунбаева Исы,
+                            д.
+                            67/1</span>
+                          <div class="grade-wrap">
+                            <span class="address__grade__star"></span>
+                            <span class="address__grade">4.99</span>
+                            <span class="address__pickup-text">Пункт выдачи</span>
+                          </div>
+                        </div>
+                        <span class="delivery-modal__delete-icon item-icon-btn" data-id="pickup-address-2"></span>
+                      </div>
+                    </div>
+
+                    <div class="delivery-modal__address-wrapper pickup-wrap-data" data-id="pickup-address-3">
+                      <div class="delivery-modal__address__data__wrapper data-wrapper-pickup">
+                        <span class="circle-checkbox checkbox-delivery-address" data-id="pickup-address-3"></span>
+                        <div class="delivery-modal__address__data__wrap">
+                          <span class="delivery-modal__address-text">г. Бишкек, улица Табышалиева, д. 57</span>
+                          <div class="grade-wrap">
+                            <span class="address__grade__star"></span>
+                            <span class="address__grade">4.99</span>
+                            <span class="address__pickup-text">Пункт выдачи</span>
+                          </div>
+                        </div>
+                        <span class="delivery-modal__delete-icon item-icon-btn" data-id="pickup-address-3"></span>
+                      </div>
+                    </div>
+
+
+
+
+
+
                   </div>
-                  <div class="delivery-modal__address-wrapper">
-                    <span class="circle-checkbox circle-checkbox-delivery checkbox-delivery-address"
-                      data-id="address-3"></span>
-                    <span class="delivery-modal__address-text">Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</span>
-                    <span class="delivery-modal__delete-icon item-icon-btn"></span>
-                  </div>
+                  <!--------------------------------------------------->
+                  <button type="button" class="main-button button-choose-delivery-address modal-button">
+                    <h4>Выбрать</h4>
+                  </button>
                 </div>
-                <button type="button" class="main-button button-choose-delivery-address modal-button">
-                  <h4>Выбрать</h4>
-                </button>
               </div>
             </div>
           </div>
 
-          <!----- модалка выбора карты оплаты --------------------------->
 
+          <!----- модалка выбора карты оплаты --------------------------->
           <div class="overlay payment-modal-overlay">
             <div class="modal payment-modal">
               <div class="payment-modal-form modal-form payment-modal__content">
@@ -335,6 +351,10 @@
             </div>
           </div>
 
+
+
+
+
           <!----- модалка кнопки заказа пустой корзины  ----------------------->
           <div class="overlay modal-order-button-disabled-overlay">
             <div class="modal modal-order-button-disabled">
@@ -345,9 +365,12 @@
               </div>
             </div>
           </div>
-          <!--------------------------------------->
 
+
+
+        </div>
       </section>
+
     </div>
   </main>
   <script type="module" src="/main.js"></script>

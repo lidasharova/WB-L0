@@ -10,6 +10,8 @@ export const handlerPaymentModal = () => {
   const closeOpenPaymentModal = () => {
     modalOpen = !modalOpen;
     paymentModal.classList.toggle('open');
+    document.body.classList.toggle('overflow-hidden');
+    console.log(modalOpen);
   };
   const handleCheckboxClick = (event) => {
     const clickedCheckbox = event.target;
