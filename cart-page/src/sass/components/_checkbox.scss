@@ -32,21 +32,26 @@
 .checkbox__decor.cart-order__checkbox-decor {
   margin-right: 7px;
 }
-.circle-checkbox {
-  display: inline-block;
-
-  background-image: url('/src/assets/svg/checkbox/circle-checkbox.svg');
-  margin-right: 8px;
+.circle-checkbox,
+.circle-checkbox.checked {
+  @include background-icon(20px, 20px);
   cursor: pointer;
   @extend %transition;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.circle-checkbox {
+  background-image: url('/src/assets/svg/checkbox/circle-checkbox.svg');
   &:hover {
     background-image: url('/src/assets/svg/checkbox/circle-checkbox-hover.svg');
   }
 }
 .circle-checkbox.checked {
-  cursor: default;
-  @include background-icon(20px, 20px);
   background-image: url('/src/assets/svg/checkbox/circle-checkbox-checked.svg');
+  &:hover {
+    background-image: url('/src/assets/svg/checkbox/circle-checkbox-checked.svg');
+  }
 }
 
 .circle-checkbox.checkbox-delivery-address {
