@@ -1,51 +1,28 @@
 .checkbox__decor,
 .checkbox-checked {
-  display: block;
-  width: 22px;
-  height: 22px;
+  cursor: pointer;
+  @extend %transition;
+  display: inline-block;
   border-radius: 6px;
   margin-right: 11px;
-  user-select: none;
-  background: none;
-  border: 1px solid $color-white-transparent-20;
-
-  @extend %transition;
-
-  cursor: pointer;
+  @include background-icon(22px, 22px);
 }
+
 .checkbox-text__text {
   @include font(16px, 24px, 400);
 }
+
 .checkbox__decor {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  background: #fff;
-  border: 1px solid $color-checkbox-border;
-  border-radius: 6px;
-  margin-right: 14px;
-  user-select: none;
+  background-image: url('/src/assets/svg/checkbox/checkbox.svg');
   &:hover {
-    border: 1px solid $color-checkbox-border-hover;
+    background-image: url('/src/assets/svg/checkbox/checkbox-hover.svg');
   }
 }
+
 .checkbox-checked {
-  position: relative;
-  background: $color-accent;
-  border: none;
-  &::after {
-    content: '';
-    width: 5px;
-    height: 9px;
-    top: 4px;
-    left: 7.6px;
-    border-right: 2.5px solid $color-white;
-    border-bottom: 2.5px solid $color-white;
-    position: absolute;
-    transform: rotate(45deg);
-  }
+  background-image: url('/src/assets/svg/checkbox/checkbox-checked.svg');
   &:hover {
-    border: none;
+    background-image: url('/src/assets/svg/checkbox/checkbox-checked.svg');
   }
 }
 .checkbox-card {
@@ -57,14 +34,17 @@
 }
 .circle-checkbox {
   display: inline-block;
-  @include background-icon(20px, 20px);
+
   background-image: url('/src/assets/svg/checkbox/circle-checkbox.svg');
   margin-right: 8px;
+  cursor: pointer;
+  @extend %transition;
   &:hover {
-    background-image: url('src/assets/svg/checkbox/circle-checkbox-hover.svg');
+    background-image: url('/src/assets/svg/checkbox/circle-checkbox-hover.svg');
   }
 }
 .circle-checkbox.checked {
+  cursor: default;
   @include background-icon(20px, 20px);
   background-image: url('/src/assets/svg/checkbox/circle-checkbox-checked.svg');
 }

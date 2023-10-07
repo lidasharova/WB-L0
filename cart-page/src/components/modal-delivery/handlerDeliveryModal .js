@@ -12,9 +12,7 @@ export const handlerDeliveryModal = () => {
   };
   const handleCheckboxClick = (event) => {
     const clickedCheckbox = event.target;
-    // console.log(clickedCheckbox);
     addressId = clickedCheckbox.dataset.id;
-    // console.log(addressId);
     checkboxes.forEach((checkbox) => {
       checkbox.classList.remove('checked');
     });
