@@ -258,7 +258,6 @@
           </div>
 
           <!----- модалка выбора адреса доставки  --------------------------->
-
           <div class="overlay delivery-modal-overlay">
             <div class="modal delivery-modal">
               <div class="delivery-modal-form modal-form delivery-modal__content">
@@ -276,19 +275,25 @@
                   <!-------------адреса курьером-------------------------------------->
                   <div class="delivery-modal__addresses-wrapper courier open">
                     <div class="delivery-modal__address-wrapper" data-id="address-1">
-                      <span class="circle-checkbox checkbox-delivery-address checked" data-id="address-1"></span>
-                      <span class="delivery-modal__address-text">Бишкек, улица Табышалиева, 57</span>
+                      <div class="delivery-modal__address__data__wrapper" data-id="address-1">
+                        <span class="circle-checkbox checkbox-delivery-address checked" data-id="address-1"></span>
+                        <span class="delivery-modal__address-text">Бишкек, улица Табышалиева, 57</span>
+                      </div>
                       <span class="delivery-modal__delete-icon item-icon-btn" data-id="address-1"></span>
                     </div>
                     <div class="delivery-modal__address-wrapper " data-id="address-2">
-                      <span class="circle-checkbox checkbox-delivery-address" data-id="address-2"></span>
-                      <span class="delivery-modal__address-text">Бишкек, улица Жукеева-Пудовкина, 77/1</span>
+                      <div class="delivery-modal__address__data__wrapper" data-id="address-2">
+                        <span class="circle-checkbox checkbox-delivery-address" data-id="address-2"></span>
+                        <span class="delivery-modal__address-text">Бишкек, улица Жукеева-Пудовкина, 77/1</span>
+                      </div>
                       <span class="delivery-modal__delete-icon item-icon-btn" data-id="address-2"></span>
                     </div>
                     <div class="delivery-modal__address-wrapper" data-id="address-3">
-                      <span class="circle-checkbox checkbox-delivery-address" data-id="address-3"></span>
-                      <span class="delivery-modal__address-text">Бишкек, микрорайон Джал, улица Ахунбаева Исы,
-                        67/1</span>
+                      <div class="delivery-modal__address__data__wrapper" data-id="address-3">
+                        <span class="circle-checkbox checkbox-delivery-address" data-id="address-3"></span>
+                        <span class="delivery-modal__address-text">Бишкек, микрорайон Джал, улица Ахунбаева Исы,
+                          67/1</span>
+                      </div>
                       <span class="delivery-modal__delete-icon item-icon-btn" data-id="address-3"></span>
                     </div>
                   </div>
@@ -344,10 +349,6 @@
                     </div>
 
 
-
-
-
-
                   </div>
                   <!--------------------------------------------------->
                   <button type="button" class="main-button button-choose-delivery-address modal-button">
@@ -367,28 +368,30 @@
                 <span class="modal__close-button payment-modal__close"></span>
                 <div class="payment-modal__payment-content-wrapper">
                   <div class="payment-modal__payment-cards">
-                    <div class="payment-card__wrapper">
+                    <div class="payment-card__wrapper" data-id="card-mir">
+
                       <span class="circle-checkbox checkbox-payment-card checked" data-id="card-mir"></span>
                       <div class="payment-card" data-id="card-mir">
                         <div class="modal__payment-card__icon icon-card-mir"></div>
                         <div class="payment-card__number">1234 56•• •••• 1234</div>
                       </div>
+
                     </div>
-                    <div class="payment-card__wrapper">
+                    <div class="payment-card__wrapper" data-id="card-visa">
                       <span class="circle-checkbox checkbox-payment-card" data-id="card-visa"></span>
                       <div class="payment-card" data-id="card-visa">
                         <div class="modal__payment-card__icon icon-card-visa"></div>
                         <div class="payment-card__number">3461 23•• •••• 7891</div>
                       </div>
                     </div>
-                    <div class="payment-card__wrapper">
+                    <div class="payment-card__wrapper" data-id="card-master">
                       <span class="circle-checkbox checkbox-payment-card" data-id="card-master"></span>
                       <div class="payment-card" data-id="card-master">
                         <div class="modal__payment-card__icon icon-card-master"></div>
                         <div class="payment-card__number">4321 56•• •••• 1679</div>
                       </div>
                     </div>
-                    <div class="payment-card__wrapper">
+                    <div class="payment-card__wrapper" data-id="card-union">
                       <span class="circle-checkbox checkbox-payment-card" data-id="card-union"></span>
                       <div class="payment-card" data-id="card-union">
                         <div class="modal__payment-card__icon icon-card-union"></div>

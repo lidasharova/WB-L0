@@ -4,7 +4,6 @@ export const handlerDeleteButtonDeliveryAddress = () => {
     deleteButtons.forEach((button) => {
       button.addEventListener('click', (event) => {
         const idDeliveryAddress = event.target.dataset.id;
-        console.log(idDeliveryAddress);
         deleteDeliveryAddress(idDeliveryAddress);
       });
     });
@@ -12,7 +11,6 @@ export const handlerDeleteButtonDeliveryAddress = () => {
 };
 
 const deleteDeliveryAddress = (idDeliveryAddress) => {
-  console.log(idDeliveryAddress);
   const addressWrapper = document.querySelector(
     `.delivery-modal__address-wrapper[data-id=${idDeliveryAddress}]`
   );

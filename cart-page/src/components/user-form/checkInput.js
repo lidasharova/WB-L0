@@ -1,7 +1,6 @@
 const form = document.querySelector('.user__form');
 const inputFields = form.querySelectorAll('.input-field');
 const noteDescription = form.querySelector('.note-description');
-console.log(inputFields);
 const submitButton = document.querySelector('.button-do-order');
 
 export const handlerErrorsInput = () => {

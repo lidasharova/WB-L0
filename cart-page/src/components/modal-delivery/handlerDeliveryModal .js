@@ -6,37 +6,35 @@ export const handlerDeliveryModal = () => {
   const closeButton = document.querySelector('.delivery-modal__close');
   const checkboxes = document.querySelectorAll('.checkbox-delivery-address');
   const chooseCurrentAddressButton = document.querySelector('.button-choose-delivery-address');
+  const addressWrappers = document.querySelectorAll('.delivery-modal__address__data__wrapper');
   let addressId = '';
   const closeOpenDeliveryModal = () => {
     deliveryModal.classList.toggle('open');
     document.body.classList.toggle('overflow-hidden');
   };
   const handleCheckboxClick = (event) => {
-    const clickedCheckbox = event.target;
-    addressId = clickedCheckbox.dataset.id;
+    const clickedAddress = event.currentTarget;
+    addressId = clickedAddress.dataset.id;
     checkboxes.forEach((checkbox) => {
       checkbox.classList.remove('checked');
     });
-    clickedCheckbox.classList.add('checked');
+    const relatedCheckbox = document.querySelector(
+      `.checkbox-delivery-address[data-id="${addressId}"]`
+    );
+    relatedCheckbox.classList.add('checked');
   };
-  if (changeDeliveryButtons.length > 0) {
-    changeDeliveryButtons.forEach((button) => {
-      button.addEventListener('click', closeOpenDeliveryModal);
-    });
-  }
-  if (closeButton) {
-    closeButton.addEventListener('click', () => {
-      closeOpenDeliveryModal();
-      resetCheckboxInModal('delivery');
-    });
-  }
-  if (chooseCurrentAddressButton) {
-    chooseCurrentAddressButton.addEventListener('click', () => {
-      changeDeliveryAddress(addressId);
-      closeOpenDeliveryModal();
-    });
-  }
-  checkboxes.forEach((checkbox) => {
-    checkbox.addEventListener('click', handleCheckboxClick);
+  changeDeliveryButtons.forEach((button) => {
+    button.addEventListener('click', closeOpenDeliveryModal);
+  });
+  closeButton.addEventListener('click', () => {
+    closeOpenDeliveryModal();
+    resetCheckboxInModal('delivery');
+  });
+  chooseCurrentAddressButton.addEventListener('click', () => {
+    changeDeliveryAddress(addressId);
+    closeOpenDeliveryModal();
+  });
+  addressWrappers.forEach((addressWrapper) => {
+    addressWrapper.addEventListener('click', handleCheckboxClick);
   });
 };

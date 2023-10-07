@@ -6,7 +6,6 @@ export const resetCheckboxInModal = (modal) => {
     });
   } else if (modal === 'payment') {
     const checkboxes = document.querySelectorAll('.checkbox-payment-card');
-    console.log(checkboxes);
     checkboxes.forEach((checkbox) => {
       checkbox.classList.remove('checked');
     });

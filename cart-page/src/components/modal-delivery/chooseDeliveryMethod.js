@@ -1,10 +1,7 @@
 export const chooseDeliveryMethod = () => {
   const deliveryMethodButtons = document.querySelectorAll('.delivery-method-button');
-  console.log(deliveryMethodButtons);
   const courierModal = document.querySelector('.delivery-modal__addresses-wrapper.courier');
-  console.log(courierModal);
   const pickupModal = document.querySelector('.delivery-modal__addresses-wrapper.pickup');
-  console.log(pickupModal);
 
   if (deliveryMethodButtons.length > 0) {
     deliveryMethodButtons.forEach((button) => {

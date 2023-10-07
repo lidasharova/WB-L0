@@ -6,37 +6,33 @@ export const handlerPaymentModal = () => {
   const closeButton = document.querySelector('.payment-modal__close');
   const checkboxes = document.querySelectorAll('.checkbox-payment-card');
   const choosePaymentCardButton = document.querySelector('.button-choose-payment-card');
+  const cardsWrappers = document.querySelectorAll('.payment-card__wrapper');
   let cardId = '';
   const closeOpenPaymentModal = () => {
     paymentModal.classList.toggle('open');
     document.body.classList.toggle('overflow-hidden');
   };
   const handleCheckboxClick = (event) => {
-    const clickedCheckbox = event.target;
-    cardId = clickedCheckbox.dataset.id;
+    const clickedCard = event.currentTarget;
+    cardId = clickedCard.dataset.id;
     checkboxes.forEach((checkbox) => {
       checkbox.classList.remove('checked');
     });
-    clickedCheckbox.classList.add('checked');
+    const relatedCheckbox = document.querySelector(`.checkbox-payment-card[data-id="${cardId}"]`);
+    relatedCheckbox.classList.add('checked');
   };
-  if (changePaymentCardButtons.length > 0) {
-    changePaymentCardButtons.forEach((button) => {
-      button.addEventListener('click', closeOpenPaymentModal);
-    });
-  }
-  if (closeButton) {
-    closeButton.addEventListener('click', () => {
-      closeOpenPaymentModal();
-      resetCheckboxInModal('payment');
-    });
-  }
-  if (choosePaymentCardButton) {
-    choosePaymentCardButton.addEventListener('click', () => {
-      changePaymentCard(cardId);
-      closeOpenPaymentModal();
-    });
-  }
-  checkboxes.forEach((checkbox) => {
-    checkbox.addEventListener('click', handleCheckboxClick);
+  changePaymentCardButtons.forEach((button) => {
+    button.addEventListener('click', closeOpenPaymentModal);
+  });
+  closeButton.addEventListener('click', () => {
+    closeOpenPaymentModal();
+    resetCheckboxInModal('payment');
+  });
+  choosePaymentCardButton.addEventListener('click', () => {
+    changePaymentCard(cardId);
+    closeOpenPaymentModal();
+  });
+  cardsWrappers.forEach((card) => {
+    card.addEventListener('click', handleCheckboxClick);
   });
 };

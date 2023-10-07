@@ -4,8 +4,6 @@ export const handlerLabelInput = () => {
   function handleInputChange(event) {
     const input = event.target;
     const label = input.nextElementSibling;
-    console.log(input);
-    console.log(label);
 
     if (input.value.trim() !== '') {
       label.classList.add('up-label');
