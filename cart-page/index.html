@@ -122,14 +122,67 @@
           <div class="payment-item-wrapper">
             <div class="payment-card__icon icon-card-mir"></div>
             <div class="payment-form__card-number payment__card-number">1234 12•• •••• 1234</div>
+            <span class="date-payment-card">01/30</span>
           </div>
           <div class="payment-form__payment-condition payment-condition">
             Спишем оплату с карты при получении
           </div>
         </section>
+
+
+
         <section class="form user__form">
           <h2 class="form__title">Получатель</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <div class="input-container">
+
+                <input type="text" id="firstName" class="input-field" required>
+                <label for="firstName" class="label">Имя</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-container">
+
+                <input type="text" id="lastName" class="input-field" required>
+                <label for="lastName" class="label">Фамилия</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <div class="input-container">
+
+                <input type="email" id="email" class="input-field" required>
+                <label for="email" class="label">Почта</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-container">
+
+                <input type="tel" id="phone" class="input-field" pattern="^\+7 \d{3} \d{3}-\d{2}-\d{2}$" required>
+                <label for="phone" class="label">Телефон</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-container">
+                <input type="text" id="inn" class="input-field" required>
+                <label for="inn" class="label">ИНН</label>
+              </div>
+              <p class="note-description">Для таможенного оформления</p>
+            </div>
+          </div>
+
+
         </section>
+
+
+
+
+
+
+
+
       </div>
       <section class="cart-order">
         <div class="cart-order__wrapper">

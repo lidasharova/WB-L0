@@ -2,21 +2,25 @@
   {
     "id": "card-mir",
     "icon": "/img/svg/mir-icon.svg",
-    "number": "1234 56•• •••• 1234"
+    "number": "1234 56•• •••• 1234",
+    "date": "01/30"
   },
   {
     "id": "card-visa",
     "icon": "/img/svg/visa-icon.svg",
-    "number": "3461 23•• •••• 7891"
+    "number": "3461 23•• •••• 7891",
+    "date": "03/25"
   },
   {
     "id": "card-master",
     "icon": "/img/svg/master-icon.svg",
-    "number": "4321 56•• •••• 1679"
+    "number": "4321 56•• •••• 1679",
+    "date": "04/27"
   },
   {
     "id": "card-union",
     "icon": "/img/svg/union-icon.svg",
-    "number": "5432 56•• •••• 9876"
+    "number": "5432 56•• •••• 9876",
+    "date": "06/24"
   }
 ]

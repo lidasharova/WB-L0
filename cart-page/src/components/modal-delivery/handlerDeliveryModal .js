@@ -1,4 +1,5 @@
 import { changeDeliveryAddress } from '@/components/modal-delivery/changeDeliveryAddress.js';
+import { resetCheckboxInModal } from '@/utils/resetCheckboxInModal.js';
 export const handlerDeliveryModal = () => {
   const changeDeliveryButtons = document.querySelectorAll('.change-button-delivery');
   const deliveryModal = document.querySelector('.delivery-modal');
@@ -24,7 +25,10 @@ export const handlerDeliveryModal = () => {
     });
   }
   if (closeButton) {
-    closeButton.addEventListener('click', closeOpenDeliveryModal);
+    closeButton.addEventListener('click', () => {
+      closeOpenDeliveryModal();
+      resetCheckboxInModal('delivery');
+    });
   }
   if (chooseCurrentAddressButton) {
     chooseCurrentAddressButton.addEventListener('click', () => {
@@ -32,7 +36,6 @@ export const handlerDeliveryModal = () => {
       closeOpenDeliveryModal();
     });
   }
-
   checkboxes.forEach((checkbox) => {
     checkbox.addEventListener('click', handleCheckboxClick);
   });
