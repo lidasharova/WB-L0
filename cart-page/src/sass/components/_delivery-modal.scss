@@ -22,6 +22,7 @@
   border-radius: 24px;
   text-align: center;
   @extend %transition;
+  cursor: pointer;
   &:hover {
     background-color: $color-border-button-delivery;
   }
@@ -47,7 +48,7 @@
   margin-bottom: 18px;
 }
 .delivery-modal__address-text {
-  max-width: 370px;
+  max-width: 371px;
 
   @include font(16px, 24px);
 }
