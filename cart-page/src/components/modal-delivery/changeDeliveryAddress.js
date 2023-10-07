@@ -1,6 +1,9 @@
 import dataUserAddresses from '@/data/dataUserAddresses.json';
 import dataAddressesPickup from '@/data/dataAddressesPickup.json';
 
+const orderFormTitle = document.querySelector('.cart-order__section-title');
+const deliverySectionText = document.querySelector('.delivery__table__item');
+
 export const changeDeliveryAddress = (id) => {
   const currentMethod = document.querySelector('.delivery-modal__addresses-wrapper.open');
   if (currentMethod.classList.contains('courier')) {
@@ -19,6 +22,8 @@ export const changeDeliveryAddressCourier = (id) => {
     textAddressElements.forEach((address) => {
       address.textContent = currentAddress.address;
     });
+    orderFormTitle.textContent = currentAddress.title;
+    deliverySectionText.textContent = currentAddress.delivery;
   }
 };
 
@@ -32,6 +37,8 @@ export const changeDeliveryAddressPickup = (id) => {
   if (textAddressElements.length > 0 && currentAddress) {
     textAddressElements.forEach((address) => {
       address.textContent = currentAddress.address;
+      orderFormTitle.textContent = currentAddress.title;
+      deliverySectionText.textContent = currentAddress.delivery;
       grade ? (grade.textContent = currentAddress.grade) : (grade.textContent = '');
       office.textContent = currentAddress.office;
     });

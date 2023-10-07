@@ -1,22 +1,22 @@
 [
   {
     "id": "card-mir",
-    "icon": "/assets/mir-icon.svg",
+    "icon": "/img/svg/mir-icon.svg",
     "number": "1234 56•• •••• 1234"
   },
   {
     "id": "card-visa",
-    "icon": "/assets/visa-icon.svg",
+    "icon": "/img/svg/visa-icon.svg",
     "number": "3461 23•• •••• 7891"
   },
   {
     "id": "card-master",
-    "icon": "/assets/master-icon.svg",
+    "icon": "/img/svg/master-icon.svg",
     "number": "4321 56•• •••• 1679"
   },
   {
     "id": "card-union",
-    "icon": "/assets/union-icon.svg",
+    "icon": "/img/svg/union-icon.svg",
     "number": "5432 56•• •••• 9876"
   }
 ]
