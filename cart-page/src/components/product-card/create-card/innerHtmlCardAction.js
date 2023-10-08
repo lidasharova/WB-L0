@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 import { calculateNewPrice } from '@/utils/calculateNewPrice.js';
 import { calculateOldPrice } from '@/utils/calculateOldPrice.js';
 
@@ -25,6 +26,7 @@ export const innerHtmlCardAction = (product) => {
       <span class="list-item__delete-button item-icon-btn" data-id="${product.id}"></span>
     </div>
   </div>
+  
   <div class="list-item__price__wrapper">
     <div class="list-item__new-price__wrapper">
 <h3 class="list-item__new-price" data-id="${product.id}" style="font-size: ${
@@ -37,6 +39,21 @@ export const innerHtmlCardAction = (product) => {
     <div class="list-item__old-price" data-id="${product.id}">
       ${calculateOldPrice(product).toLocaleString('ru-RU')} сом
     </div>
+
+    <div class="price-info__tooltip tooltip-sale-position" data-id="${product.id}">
+      <div class="price-info-tooltip__row">
+        <span class="tooltip-sale-title">Скидка ${Math.round(
+          product.discount
+        )} % </span> <span>-${Math.round((product.price * product.discount) / 100)} cом</span>
+      </div>
+      <div class="price-info-tooltip__row">
+        <span class="tooltip-sale-title">Скидка покупателя ${
+          product.userDiscount
+        }%</span><span>−${Math.round((product.price * product.userDiscount) / 100)}
+        сом</span>
+      </div>
+    </div>
+
   </div>
 </div>
 `;

@@ -6,7 +6,6 @@ import { changeCountItemsInOrderForm } from '@/components/order-form/changeCount
 import { toggleCountersInOrderForm } from '@/utils/toggleCountersInOrderForm.js';
 
 export const updateOrderForm = (selectedProducts) => {
-  console.log(selectedProducts);
   if (selectedProducts.length !== 0) {
     getTotalPrice(selectedProducts);
     getOldTotalPrice(selectedProducts);

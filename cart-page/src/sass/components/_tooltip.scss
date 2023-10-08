@@ -44,15 +44,11 @@
   left: 5px;
   top: 20px;
 }
-.tooltip-sale {
+.tooltip-sale-title {
   @include font(13px, 16px);
   color: rgb(160 160 164 / 100%);
-  width: 239px;
-  display: flex;
-  height: 64px;
-  flex-direction: column;
-  margin-top: 58px;
 }
+
 .tooltip-sale__text {
   display: flex;
   justify-content: space-between;
@@ -86,7 +82,25 @@
   opacity: 1;
 }
 
+.price-info__tooltip.tooltip-sale-position.open {
+  opacity: 1;
+}
+
 .tooltip-condition.form-tooltip.tooltip-condition-form {
   top: 25px;
   left: 200px;
+}
+
+.price-info-tooltip__row {
+  @include font(13px, 16px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.tooltip-sale-position {
+  width: 239px;
+  top: 54px;
+  left: -130px;
 }

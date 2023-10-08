@@ -224,6 +224,7 @@
   }
 }
 .list-item__price__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
