@@ -6,9 +6,11 @@ export const updateMainCheckboxState = () => {
   const areAllSelected = checkboxArray.every((checkbox) =>
     checkbox.classList.contains('checkbox-checked')
   );
-  if (areAllSelected) {
-    mainCheckbox.classList.add('checkbox-checked');
-  } else {
-    mainCheckbox.classList.remove('checkbox-checked');
+  if (mainCheckbox) {
+    if (areAllSelected) {
+      mainCheckbox.classList.add('checkbox-checked');
+    } else {
+      mainCheckbox.classList.remove('checkbox-checked');
+    }
   }
 };

@@ -6,7 +6,7 @@ import { SelectedProducts } from '../product-store/SelectedProducts';
 
 const selectedProducts = SelectedProducts.getSelectedProducts().products;
 
-export const handlerCheckboxCard= () => {
+export const handlerCheckboxCard = () => {
   const checkboxes = document.querySelectorAll('.checkbox__decor.checkbox-card');
   checkboxes.forEach((checkbox) => {
     checkbox.addEventListener('click', () => {

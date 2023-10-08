@@ -1,24 +1,24 @@
 .checkbox__decor,
 .checkbox-checked {
   cursor: pointer;
+
   @extend %transition;
+
   display: inline-block;
   border-radius: 6px;
   margin-right: 11px;
+
   @include background-icon(22px, 22px);
 }
-
 .checkbox-text__text {
   @include font(16px, 24px, 400);
 }
-
 .checkbox__decor {
   background-image: url('/src/assets/svg/checkbox/checkbox.svg');
   &:hover {
     background-image: url('/src/assets/svg/checkbox/checkbox-hover.svg');
   }
 }
-
 .checkbox-checked {
   background-image: url('/src/assets/svg/checkbox/checkbox-checked.svg');
   &:hover {
@@ -35,12 +35,14 @@
 .circle-checkbox,
 .circle-checkbox.checked {
   @include background-icon(20px, 20px);
+
   cursor: pointer;
+
   @extend %transition;
+
   display: inline-block;
   margin-right: 8px;
 }
-
 .circle-checkbox {
   background-image: url('/src/assets/svg/checkbox/circle-checkbox.svg');
   &:hover {
@@ -53,7 +55,6 @@
     background-image: url('/src/assets/svg/checkbox/circle-checkbox-checked.svg');
   }
 }
-
 .circle-checkbox.checkbox-delivery-address {
   margin-top: 5px;
 }
