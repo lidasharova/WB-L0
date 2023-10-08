@@ -1,5 +1,3 @@
-// import { removeValidation } from '@/utils/removeValidation.js';
-
 const form = document.querySelector('.user__form');
 const inputFields = form.querySelectorAll('.input-field');
 const noteDescription = form.querySelector('.note-description');
@@ -8,9 +6,9 @@ const submitButton = document.querySelector('.button-do-order');
 export const checkBlank = () => {
   submitButton.addEventListener('click', (event) => {
     event.preventDefault();
-    // removeValidation();
     inputFields.forEach((field) => {
-      if (!field.value && !field.classList.contains('error')) {
+      const errorMessage = field.closest('.form-group').querySelector('.error-message');
+      if (!field.value && !field.classList.contains('error') && !errorMessage) {
         generateErrorBlank(field);
       }
     });
