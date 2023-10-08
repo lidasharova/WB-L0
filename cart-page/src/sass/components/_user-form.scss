@@ -20,7 +20,6 @@
   @include font(16px, 24px);
   @extend %transition;
 }
-
 .input-field {
   width: 100%;
   border: none;
@@ -37,7 +36,6 @@
   color: $color-orange;
   border-bottom: 1px solid $color-orange;
 }
-
 .up-label {
   @include font(13px, 16px);
   bottom: 40px;
@@ -45,6 +43,7 @@
 .note-description {
   position: relative;
   @include font(12px, 14px);
+
   display: block;
   bottom: 20px;
 }

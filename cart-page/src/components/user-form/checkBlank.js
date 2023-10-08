@@ -1,4 +1,4 @@
-import { removeValidation } from '@/utils/removeValidation.js';
+// import { removeValidation } from '@/utils/removeValidation.js';
 
 const form = document.querySelector('.user__form');
 const inputFields = form.querySelectorAll('.input-field');
@@ -8,22 +8,13 @@ const submitButton = document.querySelector('.button-do-order');
 export const checkBlank = () => {
   submitButton.addEventListener('click', (event) => {
     event.preventDefault();
-    removeValidation();
+    // removeValidation();
     inputFields.forEach((field) => {
-      if (!field.value) {
+      if (!field.value && !field.classList.contains('error')) {
         generateErrorBlank(field);
       }
     });
   });
-
-  // inputFields.forEach((field) => {
-  //   field.addEventListener('blur', () => {
-  //     if (!field.value) {
-  //       removeValidation();
-  //       generateErrorBlank(field);
-  //     }
-  //   });
-  // });
 };
 
 export const generateErrorBlank = (field) => {
