@@ -10,7 +10,7 @@
   box-shadow:
     0 2px 10px rgb(0 0 0 / 15%),
     0 0 1px rgb(0 0 0 / 30%);
-  z-index: 15;
+  z-index: 5;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -65,7 +65,7 @@
   box-shadow:
     0 2px 10px rgb(0 0 0 / 15%),
     0 0 1px rgb(0 0 0 / 30%);
-  z-index: 15;
+  z-index: 5;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -102,5 +102,5 @@
 .tooltip-sale-position {
   width: 239px;
   top: 54px;
-  left: -130px;
+  left: -165px;
 }
