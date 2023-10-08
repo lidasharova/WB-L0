@@ -12,32 +12,50 @@
     0 0 1px rgb(0 0 0 / 30%);
   z-index: 15;
   text-align: left;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.tooltip-open {
+
+.provider-info__tooltip.tooltip-provider.open {
   opacity: 1;
 }
-.tooltip-provider__size {
-  left: 143px;
+
+.provider-container-tooltip {
+  position: relative;
+}
+
+.provider-info-text {
+}
+
+.provider-info-title {
+  display: block;
+  @include font(13px, 16px);
+  @extend %font-segoe-bold;
+  margin: 0;
+}
+.provider-info-text {
+  @include font(13px, 16px);
+}
+
+.tooltip-provider {
+  @include font(13px, 16px);
   margin-top: 3px;
   width: 280px;
   height: 104px;
+  left: 5px;
+  top: 20px;
 }
-.tooltip-sale__size {
+.tooltip-sale {
+  @include font(13px, 16px);
   color: rgb(160 160 164 / 100%);
   width: 239px;
   display: flex;
   height: 64px;
   flex-direction: column;
-  font-size: 13px;
   margin-top: 58px;
 }
 .tooltip-sale__text {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: space-between;
-  font-weight: 400;
 }

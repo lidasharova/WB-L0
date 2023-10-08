@@ -7,8 +7,9 @@
   background-color: $color-white;
   top: 5px;
   border-radius: 16px;
-  border: 1px solid rgb(0 0 0 / 11.4%);
-  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 14.9%);
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.3),
+    0px 2px 10px 0px rgba(0, 0, 0, 0.15);
 }
 .cart-order__wrapper {
   display: flex;
