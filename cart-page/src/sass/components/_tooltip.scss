@@ -25,16 +25,14 @@
   position: relative;
 }
 
-.provider-info-text {
-}
-
 .provider-info-title {
   display: block;
   @include font(13px, 16px);
   @extend %font-segoe-bold;
   margin: 0;
 }
-.provider-info-text {
+.provider-info-text,
+.condition-info__tooltip__content {
   @include font(13px, 16px);
 }
 
@@ -58,4 +56,37 @@
 .tooltip-sale__text {
   display: flex;
   justify-content: space-between;
+}
+
+.tooltip-condition {
+  position: absolute;
+  padding: 10px 16px 14px 16px;
+  border-radius: 8px;
+  background: #fff;
+  color: black;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  box-shadow:
+    0 2px 10px rgb(0 0 0 / 15%),
+    0 0 1px rgb(0 0 0 / 30%);
+  z-index: 15;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include font(13px, 16px);
+  width: 288px;
+  height: 56px;
+  top: 45px;
+  right: 110px;
+}
+
+.tooltip-condition.order-form-tooltip.open,
+.tooltip-condition.form-tooltip.open {
+  opacity: 1;
+}
+
+.tooltip-condition.form-tooltip.tooltip-condition-form {
+  top: 25px;
+  left: 200px;
 }

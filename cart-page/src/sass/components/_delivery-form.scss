@@ -65,6 +65,8 @@
   margin-bottom: 16px;
 }
 .delivery__conditions__wrapper {
+  max-width: 375px;
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
