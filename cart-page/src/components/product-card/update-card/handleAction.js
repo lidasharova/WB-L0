@@ -24,9 +24,9 @@ export const handleAction = (actionType, idProduct) => {
   }
 
   if (cart.availableProducts.length < 2) {
-    const accordion = document.querySelector('.cart-accordion__info');
+    const accordion = document.querySelector('.cart-accordion__available');
     if (accordion) {
-      accordion.classList.add('remove');
+      accordion.remove();
     }
   }
 

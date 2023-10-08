@@ -1,41 +1,35 @@
+import { removeValidation } from '@/utils/removeValidation.js';
+
 const form = document.querySelector('.user__form');
 const inputFields = form.querySelectorAll('.input-field');
 const noteDescription = form.querySelector('.note-description');
 const submitButton = document.querySelector('.button-do-order');
 
-export const handlerErrorsInput = () => {
+export const checkBlank = () => {
   submitButton.addEventListener('click', (event) => {
     event.preventDefault();
-    checkBlank();
+    removeValidation();
+    inputFields.forEach((field) => {
+      if (!field.value) {
+        generateErrorBlank(field);
+      }
+    });
   });
-};
 
-// const inputName = form.querySelector('#firstName');
-// const inputLastName = form.querySelector('#lastName');
-// const inputEmail = form.querySelector('#email');
-// const inputPhone = form.querySelector('#phone');
-// const inputInn = form.querySelector('#inn');
-
-export const checkBlank = () => {
-  removeValidation();
-  inputFields.forEach((field) => {
-    if (!field.value) {
-      generateErrorBlank(field);
-    }
-  });
-};
-
-export const removeValidation = () => {
-  const errors = form.querySelectorAll('.error-message');
-  errors.forEach((error) => {
-    error.remove();
-  });
+  // inputFields.forEach((field) => {
+  //   field.addEventListener('blur', () => {
+  //     if (!field.value) {
+  //       removeValidation();
+  //       generateErrorBlank(field);
+  //     }
+  //   });
+  // });
 };
 
 export const generateErrorBlank = (field) => {
   let text = '';
-  if (field.id === 'firsName') {
-    text = '«Укажите имя»';
+  if (field.id === 'firstName') {
+    text = 'Укажите имя';
   }
   if (field.id === 'lastName') {
     text = 'Введите фамилию';
@@ -50,9 +44,8 @@ export const generateErrorBlank = (field) => {
     noteDescription.classList.add('hidden');
     text = 'Укажите ИНН';
   }
-
   const errorMessage = document.createElement('div');
   errorMessage.className = 'error-message';
   errorMessage.innerHTML = text;
-  field.parentNode.appendChild(errorMessage);
+  field.parentNode.after(errorMessage);
 };

@@ -129,22 +129,18 @@
           </div>
         </section>
 
-
-
         <section class="form user__form">
           <h2 class="form__title">Получатель</h2>
           <div class="form-row">
             <div class="form-group">
               <div class="input-container">
-
-                <input type="text" id="firstName" class="input-field" required>
+                <input type="text" id="firstName" class="input-field" required />
                 <label for="firstName" class="label">Имя</label>
               </div>
             </div>
             <div class="form-group">
               <div class="input-container">
-
-                <input type="text" id="lastName" class="input-field" required>
+                <input type="text" id="lastName" class="input-field" required />
                 <label for="lastName" class="label">Фамилия</label>
               </div>
             </div>
@@ -152,37 +148,26 @@
           <div class="form-row">
             <div class="form-group">
               <div class="input-container">
-
-                <input type="email" id="email" class="input-field" required>
+                <input type="email" id="email" class="input-field" required />
                 <label for="email" class="label">Почта</label>
               </div>
             </div>
             <div class="form-group">
               <div class="input-container">
-
-                <input type="tel" id="phone" class="input-field" pattern="^\+7 \d{3} \d{3}-\d{2}-\d{2}$" required>
+                <input type="tel" id="phone" class="input-field" pattern="^\+7 \d{3} \d{3}-\d{2}-\d{2}$" required />
                 <label for="phone" class="label">Телефон</label>
               </div>
             </div>
             <div class="form-group">
               <div class="input-container">
-                <input type="text" id="inn" class="input-field" required>
+                <input type="text" id="inn" class="input-field" required />
                 <label for="inn" class="label">ИНН</label>
+                <p class="note-description">Для таможенного оформления</p>
               </div>
-              <p class="note-description">Для таможенного оформления</p>
+
             </div>
           </div>
-
-
         </section>
-
-
-
-
-
-
-
-
       </div>
       <section class="cart-order">
         <div class="cart-order__wrapper">
@@ -281,7 +266,7 @@
                       </div>
                       <span class="delivery-modal__delete-icon item-icon-btn" data-id="address-1"></span>
                     </div>
-                    <div class="delivery-modal__address-wrapper " data-id="address-2">
+                    <div class="delivery-modal__address-wrapper" data-id="address-2">
                       <div class="delivery-modal__address__data__wrapper" data-id="address-2">
                         <span class="circle-checkbox checkbox-delivery-address" data-id="address-2"></span>
                         <span class="delivery-modal__address-text">Бишкек, улица Жукеева-Пудовкина, 77/1</span>
@@ -315,13 +300,11 @@
                       </div>
                     </div>
 
-
                     <div class="delivery-modal__address-wrapper pickup-wrap-data" data-id="pickup-address-2">
                       <div class="delivery-modal__address__data__wrapper data-wrapper-pickup">
                         <span class="circle-checkbox checkbox-delivery-address" data-id="pickup-address-2"></span>
                         <div class="delivery-modal__address__data__wrap">
-                          <span class="delivery-modal__address-text">г. Бишкек, микрорайон Джал, улица Ахунбаева Исы,
-                            д.
+                          <span class="delivery-modal__address-text">г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д.
                             67/1</span>
                           <div class="grade-wrap">
                             <span class="address__grade__star"></span>
@@ -347,8 +330,6 @@
                         <span class="delivery-modal__delete-icon item-icon-btn" data-id="pickup-address-3"></span>
                       </div>
                     </div>
-
-
                   </div>
                   <!--------------------------------------------------->
                   <button type="button" class="main-button button-choose-delivery-address modal-button">
@@ -359,7 +340,6 @@
             </div>
           </div>
 
-
           <!----- модалка выбора карты оплаты --------------------------->
           <div class="overlay payment-modal-overlay">
             <div class="modal payment-modal">
@@ -369,13 +349,11 @@
                 <div class="payment-modal__payment-content-wrapper">
                   <div class="payment-modal__payment-cards">
                     <div class="payment-card__wrapper" data-id="card-mir">
-
                       <span class="circle-checkbox checkbox-payment-card checked" data-id="card-mir"></span>
                       <div class="payment-card" data-id="card-mir">
                         <div class="modal__payment-card__icon icon-card-mir"></div>
                         <div class="payment-card__number">1234 56•• •••• 1234</div>
                       </div>
-
                     </div>
                     <div class="payment-card__wrapper" data-id="card-visa">
                       <span class="circle-checkbox checkbox-payment-card" data-id="card-visa"></span>
@@ -407,26 +385,20 @@
             </div>
           </div>
 
-
-
-
-
           <!----- модалка кнопки заказа пустой корзины  ----------------------->
           <div class="overlay modal-order-button-disabled-overlay">
             <div class="modal modal-order-button-disabled">
               <div class="modal-order-button-disabled-form modal-form">
                 <span class="modal-order-button-disabled__text">Для оформления заказа выберите товар
                 </span>
-                <button class="modal-order-button-disabled__close-button main-button">Закрыть</button>
+                <button class="modal-order-button-disabled__close-button main-button">
+                  Закрыть
+                </button>
               </div>
             </div>
           </div>
-
-
-
         </div>
       </section>
-
     </div>
   </main>
   <script type="module" src="/main.js"></script>

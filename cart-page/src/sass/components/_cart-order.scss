@@ -150,14 +150,16 @@
 }
 .payment__card-number {
   @include font(13px, 16px);
+
   text-align: right;
 }
 .payment-card__icon {
   @include background-icon(32px, 24px);
+
   margin-right: 8px;
 }
-
 .date-payment-card {
   @include font(16px, 24px);
+
   margin-left: 12px;
 }

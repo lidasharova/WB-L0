@@ -35,26 +35,23 @@
 .cart-accordion__icon_open,
 .cart-accordion__icon_close {
   @include background-icon(20px, 20px);
-  .cart-accordion__icon_open {
-    background-image: url('/src/assets/svg/card/arrow-open.svg');
-    &:hover {
-      background-image: url('/src/assets/svg/card/arrow-open-hover.svg');
-    }
-  }
-  .cart-accordion__icon_close {
-    background-image: url('/src/assets/svg/card/arrow-close.svg');
-    &:hover {
-      background-image: url('/src/assets/svg/card/arrow-close-hover.svg');
-    }
-  }
-
-  position: relative;
-  display: block;
-  margin: 0 auto 6px;
-  cursor: pointer;
-
   @extend %transition;
+  cursor: pointer;
 }
+
+.cart-accordion__icon_open {
+  background-image: url('/src/assets/svg/card/arrow-open.svg');
+  &:hover {
+    background-image: url('/src/assets/svg/card/arrow-open-hover.svg');
+  }
+}
+.cart-accordion__icon_close {
+  background-image: url('/src/assets/svg/card/arrow-close.svg');
+  &:hover {
+    background-image: url('/src/assets/svg/card/arrow-close-hover.svg');
+  }
+}
+
 .cart-accordion__info {
   display: flex;
   width: 871px;
@@ -319,7 +316,6 @@
   background-image: url('/src/assets/svg/card/plus-disabled.svg');
   cursor: default;
 }
-
 .remove {
-  display: none;
+  display: none !important;
 }

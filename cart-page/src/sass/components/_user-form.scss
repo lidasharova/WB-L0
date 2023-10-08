@@ -1,69 +1,63 @@
 .form-row {
   display: flex;
   justify-content: space-between;
-  max-width: 725px;
+  max-width: 700px;
+  gap: 24px;
 }
-
 .form-group {
   flex: 1;
   margin-right: 24px;
 }
-
 .input-container {
-  position: relative;
+  height: 64px;
 }
-
 .label {
-  position: absolute;
+  position: relative;
   left: 0;
-  @include font(16px, 24px);
+  bottom: 25px;
   color: $color-gray;
   pointer-events: none;
+  @include font(16px, 24px);
   @extend %transition;
-  bottom: 20px;
 }
 
 .input-field {
   width: 100%;
   border: none;
   border-bottom: 1px solid $color-gray;
-  @include font(16px, 24px);
   background: transparent;
-  margin-bottom: 19px;
   margin-top: 18px;
+  @include font(16px, 24px);
 }
-
 .input-field:focus {
   outline: none;
   border-color: none;
 }
-
-.input-field .error {
+.input-field.error {
   color: $color-orange;
   border-bottom: 1px solid $color-orange;
 }
 
 .up-label {
-  bottom: 50px;
   @include font(13px, 16px);
+  bottom: 40px;
 }
-
 .note-description {
+  position: relative;
   @include font(12px, 14px);
   display: block;
-  margin-top: -15px;
+  bottom: 20px;
 }
-
 .error-message {
+  position: relative;
   @include font(12px, 14px);
-  margin-top: 4px;
+  bottom: 20px;
   color: $color-orange;
 }
 .hidden {
   display: none;
 }
-
 .input-field:focus + .label {
-  bottom: 50px;
   @include font(13px, 16px);
+  bottom: 40px;
 }
