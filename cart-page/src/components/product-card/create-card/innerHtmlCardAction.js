@@ -43,13 +43,13 @@ export const innerHtmlCardAction = (product) => {
     <div class="price-info__tooltip tooltip-sale-position" data-id="${product.id}">
       <div class="price-info-tooltip__row">
         <span class="tooltip-sale-title">Скидка ${Math.round(
-          product.discount
-        )} % </span> <span>-${Math.round((product.price * product.discount) / 100)} cом</span>
+          product.discount - 5
+        )} % </span> <span>-${Math.round((product.price * (product.discount - 5)) / 100)} cом</span>
       </div>
       <div class="price-info-tooltip__row">
         <span class="tooltip-sale-title">Скидка покупателя ${
           product.userDiscount
-        }%</span><span>−${Math.round((product.price * product.userDiscount) / 100)}
+        }%</span><span>-${Math.round((product.price * product.userDiscount) / 100)}
         сом</span>
       </div>
     </div>

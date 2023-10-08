@@ -141,9 +141,6 @@
 
   color: $color-gray;
 }
-
-// КНОПКИ
-
 .list-item__action {
   width: 226px;
   display: flex;
@@ -155,6 +152,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  z-index: 7;
 }
 .list-item__count__wrapper {
   width: 100px;
