@@ -5,10 +5,13 @@ import { handlerOrderForm } from '@/components/order-form/handlerOrderForm.js';
 import { handlerCheckFrom } from '@/components/user-form/handlerCheckFrom.js';
 import { handlerTooltips } from '@/components/tooltips/handlerTooltips.js';
 
+
+
 window.onload = function () {
   renderCart();
   handlerButtonsCard();
   handlerOrderForm();
   handlerCheckFrom();
   handlerTooltips();
+
 };

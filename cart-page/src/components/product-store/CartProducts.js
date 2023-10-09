@@ -4,8 +4,7 @@ import { updateCountProduct } from '@/components/product-card/update-card/update
 import { updatePriceInCard } from '@/components/product-card/update-card/updatePriceInCard.js';
 import { updateOrderForm } from '@/components/order-form/updateOrderForm.js';
 import { SelectedProducts } from './SelectedProducts';
-
-const selectedProducts = SelectedProducts.getSelectedProducts().products;
+import { cartNotification } from '@/components/product-card/update-card/cartNotification.js';
 
 export class CartProducts {
   constructor() {
@@ -19,6 +18,7 @@ export class CartProducts {
   }
 
   increaseCountProduct(idProduct) {
+    const selectedProducts = SelectedProducts.getSelectedProducts().products;
     const selectedProductsList = new SelectedProducts();
     const newProduct = this.availableProducts.find((product) => product.id === idProduct);
 
@@ -42,6 +42,7 @@ export class CartProducts {
   }
 
   decreaseCountProduct(idProduct) {
+    const selectedProducts = SelectedProducts.getSelectedProducts().products;
     const selectedProductsList = new SelectedProducts();
     const product = this.availableProducts.find((product) => product.id === idProduct);
     if (product && product.count > 1) {
@@ -65,6 +66,7 @@ export class CartProducts {
       const index = this.availableProducts.indexOf(product);
       this.availableProducts.splice(index, 1);
     }
+    cartNotification(this.availableProducts);
   }
 
   static getAvailableProducts() {

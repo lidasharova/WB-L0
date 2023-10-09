@@ -8,10 +8,12 @@ export class SelectedProducts {
   addSelectedProduct(idSelectedProduct) {
     const cart = CartProducts.getAvailableProducts();
     const selectedProduct = cart.find((product) => product.id === idSelectedProduct);
-    if (selectedProduct) {
+    const isProductInSelected = this.products.some((product) => product.id === idSelectedProduct);
+    if (selectedProduct && !isProductInSelected) {
       this.products.push(selectedProduct);
     }
   }
+
   deleteSelectedProduct(idProduct) {
     const product = this.products.find((product) => product.id === idProduct);
     if (product) {
@@ -34,6 +36,14 @@ export class SelectedProducts {
     if (product && product.count > 1) {
       product.count--;
     }
+  }
+
+  static selectedAllProducts() {
+    const cart = CartProducts.getAvailableProducts();
+    this.products = cart;
+  }
+  static deleteAllSelectedProducts() {
+    this.products = [];
   }
   static getSelectedProducts() {
     if (!this.instance) {

@@ -11,7 +11,10 @@
     "count": 1,
     "maxCount": 2,
     "img": "/img/cart-items/t-shirt.png",
-    "iconUrl": "/img/delivery/t-shirt-icon.png"
+    "iconUrl": "/img/delivery/t-shirt-icon.png",
+    "delivery": {
+      "1": 2
+    }
   },
   {
     "id": "case-02",
@@ -24,7 +27,11 @@
     "count": 200,
     "maxCount": 250,
     "img": "/img/cart-items/case.png",
-    "iconUrl": "/img/delivery/case-icon.png"
+    "iconUrl": "/img/delivery/case-icon.png",
+    "delivery": {
+      "1": 184,
+      "2": 66
+    }
   },
   {
     "id": "pencils-03",
@@ -36,6 +43,9 @@
     "count": 2,
     "maxCount": 2,
     "img": "/img/cart-items/pencils.png",
-    "iconUrl": "/img/delivery/pencils-icon.png"
+    "iconUrl": "/img/delivery/pencils-icon.png",
+    "delivery": {
+      "1": 2
+    }
   }
 ]
