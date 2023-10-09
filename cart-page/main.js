@@ -4,14 +4,13 @@ import { handlerButtonsCard } from '@/components/product-card/update-card/handle
 import { handlerOrderForm } from '@/components/order-form/handlerOrderForm.js';
 import { handlerCheckFrom } from '@/components/user-form/handlerCheckFrom.js';
 import { handlerTooltips } from '@/components/tooltips/handlerTooltips.js';
-
-
+import { handlerMenu } from '@/components/menu/handlerMenu.js';
 
 window.onload = function () {
+  handlerMenu();
   renderCart();
   handlerButtonsCard();
   handlerOrderForm();
   handlerCheckFrom();
   handlerTooltips();
-
 };
