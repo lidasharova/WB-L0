@@ -3,6 +3,10 @@
   background-color: $color-white;
   border-radius: 16px;
   margin-bottom: 16px;
+  @media (min-width: 1024px) and (max-width: 1100px) {
+    margin-bottom: 13px;
+    padding: 16px 26px 24px 24px;
+  }
 }
 .form__title {
   @include font(24px, 32px, 700, -0.01px);
@@ -101,14 +105,26 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  @media (min-width: 1024px) and (max-width: 1100px) {
+    padding-top: 8px;
+  }
 }
 .conditions__icon {
   @include background-icon(23px, 22px);
+  @media (min-width: 1024px) and (max-width: 1100px) {
+    @include background-icon(37px, 22px);
+  }
 
   background-image: url('/src/assets/svg/delivery/shipping.svg');
   position: relative;
   display: block;
   margin-right: 8px;
+}
+
+.conditions__icon-delivery {
+  @media (min-width: 1024px) and (max-width: 1100px) {
+    @include background-icon(22px, 22px);
+  }
 }
 .conditions__text {
   @include font(13px, 16px, 400);
@@ -150,7 +166,10 @@
   padding-bottom: 6px;
 }
 
-.delivery__address__data.delivery-current-address{
+.delivery__address__data.delivery-current-address {
   margin-bottom: 8px;
-  
+}
+
+.delivery__address__data.delivery-current-address {
+  flex-basis: 100%;
 }
