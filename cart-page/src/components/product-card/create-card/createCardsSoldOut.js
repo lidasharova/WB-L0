@@ -2,7 +2,7 @@ export const createCardsOut = (products) => {
   const cardsOutWrapper = document.querySelector('.cart-list__items-out__wrapper');
   products.forEach((product) => {
     const itemOutWrapper = document.createElement('div');
-    itemOutWrapper.className = 'cart-list__item__wrapper';
+    itemOutWrapper.classList.add('cart-list__item__wrapper', 'soldout-card');
     itemOutWrapper.dataset.id = product.id;
     itemOutWrapper.innerHTML = `
       <div class="cart-list__item__product" data-id="${product.id}">

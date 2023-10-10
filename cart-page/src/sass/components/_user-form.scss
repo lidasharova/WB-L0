@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   max-width: 700px;
+  height: 64px;
   gap: 24px;
+  padding-top: 16px;
 }
 .form-group {
   flex: 1;
   margin-right: 24px;
 }
-.input-container {
-  height: 64px;
-}
+
 .label {
   position: relative;
   left: 0;
@@ -38,7 +38,7 @@
 }
 .up-label {
   @include font(13px, 16px);
-  bottom: 40px;
+  bottom: 47px;
 }
 .note-description {
   position: relative;
@@ -58,5 +58,9 @@
 }
 .input-field:focus + .label {
   @include font(13px, 16px);
-  bottom: 40px;
+  bottom: 47px;
+}
+
+.form.user__form {
+  padding-bottom: 40px;
 }

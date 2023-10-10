@@ -4,11 +4,9 @@ export const handlerTooltipDiscount = () => {
 
   oldPriceLinks.forEach((oldPriceLink) => {
     oldPriceLink.addEventListener('mouseover', (e) => {
-      if (window.myGlobals.isModalOpen === false) {
-        const id = e.target.dataset.id;
-        const currentTooltip = tooltips.find((tooltip) => tooltip.dataset.id === id);
-        currentTooltip.classList.add('open');
-      }
+      const id = e.target.dataset.id;
+      const currentTooltip = tooltips.find((tooltip) => tooltip.dataset.id === id);
+      currentTooltip.classList.add('open');
     });
 
     oldPriceLink.addEventListener('mouseout', () => {

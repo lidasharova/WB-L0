@@ -1,5 +1,5 @@
 .form {
-  padding: 16px 24px 24px;
+  padding: 16px 24px 20px;
   background-color: $color-white;
   border-radius: 16px;
   margin-bottom: 16px;
@@ -8,16 +8,15 @@
   @include font(24px, 32px, 700, -0.01px);
   @extend %font-segoe-bold;
 
-  margin-bottom: 16px;
+  padding-bottom: 0px;
 }
 .delivery__header {
   @extend %flex-row-space-between;
+  margin-bottom: 16px;
 }
 .delivery__table {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
-  gap: 16px;
 }
 .address__grade__star {
   @include background-icon(12px, 12px);
@@ -34,19 +33,28 @@
   vertical-align: top;
 }
 .delivery__address__wrapper,
-.delivery__cost__wrapper,
+.delivery__cost__wrapper {
+  padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  // padding: 0;
+  // margin: 0;
+}
+
 .delivery__date__photos__wrapper {
   display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 .delivery__date__photo {
   position: relative;
   list-style-type: none;
   display: inline-block;
-  width: 50px;
+  width: 40px;
   height: 56px;
   background-repeat: no-repeat;
   margin-right: 8px;
@@ -70,12 +78,14 @@
 }
 .delivery__date__item {
   display: flex;
+  margin-bottom: 16px;
+  height: 56px;
 }
 
 .address__data__wrapper {
   display: flex;
   flex-flow: row wrap;
-  width: 330px;
+  width: 350px;
 }
 .address__grade,
 .address__office-hours {
@@ -86,7 +96,7 @@
 }
 
 .delivery__conditions__wrapper {
-  max-width: 375px;
+  padding-top: 12px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -101,7 +111,7 @@
   margin-right: 8px;
 }
 .conditions__text {
-  @include font(13px, 16px, 400, -0.06em);
+  @include font(13px, 16px, 400);
 }
 .conditions__link {
   color: $color-green;
@@ -116,11 +126,11 @@
 .delivery-icon__count,
 .cart-notification {
   display: inline-block;
-  padding: 5px;
+  padding: 6px;
   position: absolute;
   height: 16px;
-  top: -5px;
-  left: 37px;
+  top: -4px;
+  left: 26px;
   background-color: $color-orange;
   color: $color-white;
   font-size: 10px;
@@ -138,4 +148,9 @@
   left: 19px;
   @extend %font-segoe-bold;
   padding-bottom: 6px;
+}
+
+.delivery__address__data.delivery-current-address{
+  margin-bottom: 8px;
+  
 }

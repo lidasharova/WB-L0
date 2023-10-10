@@ -1,8 +1,6 @@
 import { changeDeliveryAddress } from '@/components/modal-delivery/changeDeliveryAddress.js';
 import { resetCheckboxInModal } from '@/utils/resetCheckboxInModal.js';
-window.myGlobals = {
-  isModalOpen: false,
-};
+
 const changeDeliveryButtons = document.querySelectorAll('.change-button-delivery');
 const deliveryModal = document.querySelector('.delivery-modal');
 const closeButton = document.querySelector('.delivery-modal__close');
@@ -14,13 +12,11 @@ let addressId = '';
 export const openDeliveryModal = () => {
   deliveryModal.classList.add('open');
   document.body.classList.add('overflow-hidden');
-  window.myGlobals.isModalOpen = true;
 };
 
 export const closeDeliveryModal = () => {
   deliveryModal.classList.remove('open');
   document.body.classList.remove('overflow-hidden');
-  window.myGlobals.isModalOpen = false;
 };
 
 export const handlerDeliveryModal = () => {
@@ -52,4 +48,3 @@ export const handlerDeliveryModal = () => {
   });
 };
 
-export default window.myGlobals;
