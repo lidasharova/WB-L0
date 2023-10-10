@@ -6,6 +6,8 @@ import {
   handlerCheckboxCard,
   handlerMainCheckbox,
 } from '@/components/checkbox-card/handlerCheckboxCard.js';
+import { handlerAccordionSoldOut } from '@/components/accordion/handlerAccordionSoldOut.js';
+import { handlerAccordionCart } from '@/components/accordion/handlerAccordionCart.js';
 
 export const handlerButtonsCard = () => {
   increaseCountProductsByPlus();
@@ -14,4 +16,6 @@ export const handlerButtonsCard = () => {
   handlerFavoriteButtons();
   handlerMainCheckbox();
   handlerCheckboxCard();
+  handlerAccordionSoldOut();
+  handlerAccordionCart();
 };

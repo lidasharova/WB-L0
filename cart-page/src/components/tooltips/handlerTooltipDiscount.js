@@ -6,7 +6,7 @@ export const handlerTooltipDiscount = () => {
   oldPriceLinks.forEach((oldPriceLink) => {
     oldPriceLink.addEventListener('mouseover', (e) => {
       buttonsCard.forEach((button) => {
-        button.classList.remove('position');
+        button.classList.add('position');
       });
       const id = e.target.dataset.id;
       const currentTooltip = tooltips.find((tooltip) => tooltip.dataset.id === id);
@@ -16,7 +16,7 @@ export const handlerTooltipDiscount = () => {
     oldPriceLink.addEventListener('mouseout', () => {
       const currentTooltip = tooltips.find((tooltip) => tooltip.classList.contains('open'));
       buttonsCard.forEach((button) => {
-        button.classList.add('position');
+        button.classList.remove('position');
       });
       if (currentTooltip) {
         currentTooltip.classList.remove('open');
