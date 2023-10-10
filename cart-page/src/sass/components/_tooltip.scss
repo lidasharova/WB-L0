@@ -103,4 +103,9 @@
   width: 239px;
   top: 54px;
   left: -165px;
+  z-index: 10;
+}
+
+.list-item__count__container.position {
+  z-index: 15;
 }

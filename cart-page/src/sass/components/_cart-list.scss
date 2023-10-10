@@ -299,6 +299,7 @@
   justify-content: space-between;
   margin-bottom: 16px;
   color: $color-gray;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .count-minus {
   background-image: url('/src/assets/svg/card/minus.svg');
