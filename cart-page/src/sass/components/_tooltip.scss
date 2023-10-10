@@ -75,6 +75,10 @@
   height: 56px;
   top: 45px;
   right: 110px;
+  @media (min-width: 1000px) and (max-width: 1100px) {
+    top: 45px;
+    right: -16px;
+  }
 }
 
 .tooltip-condition.order-form-tooltip.open,

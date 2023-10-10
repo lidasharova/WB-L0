@@ -3,7 +3,7 @@
   background-color: $color-white;
   border-radius: 16px;
   margin-bottom: 16px;
-  @media (min-width: 1024px) and (max-width: 1100px) {
+  @media (min-width: 1000px) and (max-width: 1100px) {
     margin-bottom: 13px;
     padding: 16px 26px 24px 24px;
   }
@@ -105,13 +105,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  @media (min-width: 1024px) and (max-width: 1100px) {
+  @media (min-width: 1000px) and (max-width: 1100px) {
     padding-top: 8px;
   }
 }
 .conditions__icon {
   @include background-icon(23px, 22px);
-  @media (min-width: 1024px) and (max-width: 1100px) {
+  @media (min-width: 1000px) and (max-width: 1100px) {
     @include background-icon(37px, 22px);
   }
 
@@ -122,7 +122,7 @@
 }
 
 .conditions__icon-delivery {
-  @media (min-width: 1024px) and (max-width: 1100px) {
+  @media (min-width: 1000px) and (max-width: 1100px) {
     @include background-icon(22px, 22px);
   }
 }

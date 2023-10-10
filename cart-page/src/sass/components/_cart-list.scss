@@ -8,12 +8,16 @@
   margin: 0 auto;
   padding: 16px 22px 33px 24px;
   justify-content: space-between;
+  @media (min-width: 1000px) and (max-width: 1100px) {
+    padding: 16px 25px 35px 24px;
+  }
 
-  @media (max-width: $mobile-width) {
+  @media (min-width: 250px) and (max-width: 650px) {
     padding: 15px 16px;
   }
-  @media (min-width: 1024px) and (max-width: 1100px) {
-    padding: 16px 25px 35px 24px;
+
+  @media (min-width: 250px) and (max-width: 1000px) {
+    flex-direction: column;
   }
 }
 .main__content {
@@ -22,8 +26,11 @@
   width: calc(100% - 429px - 34px);
   margin-top: 20px;
 
-  @media (min-width: 1024px) and (max-width: 1100px) {
+  @media (min-width: 1000px) and (max-width: 1100px) {
     width: 640px;
+  }
+  @media (min-width: 250px) and (max-width: 1000px) {
+    width: 100%;
   }
 }
 .cart-accordion {
@@ -92,6 +99,11 @@
   text-align: left;
 
   @extend %font-segoe-bold;
+
+  @media (min-width: 250px) and (max-width: 550px) {
+    margin-bottom: 16px;
+    @include font(20px, 28px, 700, -0.01em);
+  }
 }
 .cart__order {
   position: relative;

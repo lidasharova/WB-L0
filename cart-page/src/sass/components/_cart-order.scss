@@ -11,9 +11,16 @@
     0px 0px 1px 0px rgba(0, 0, 0, 0.3),
     0px 2px 10px 0px rgba(0, 0, 0, 0.15);
 
-  @media (min-width: 1024px) and (max-width: 1100px) {
+  @media (min-width: 1000px) and (max-width: 1100px) {
     width: 303px;
     height: 604px;
+  }
+
+  @media (min-width: 250px) and (max-width: 1000px) {
+    width: 100%;
+    top: 0px;
+    padding: 16px;
+    margin-left: 0px;
   }
 }
 .cart-order__wrapper {
@@ -67,7 +74,7 @@
   justify-content: space-between;
   margin-bottom: 25px;
 
-  @media (min-width: 1024px) and (max-width: 1100px) {
+  @media (min-width: 1000px) and (max-width: 1100px) {
     margin-bottom: 43px;
   }
 }
@@ -105,9 +112,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (min-width: 1024px) and (max-width: 1100px) {
+  @media (min-width: 1000px) and (max-width: 1100px) {
     width: 255px;
     padding: 8px 8px 12px 8px;
+  }
+
+  @media (min-width: 250px) and (max-width: 1000px) {
+    width: 100%;
+    justify-content: flex-start;
   }
 }
 .payment-item-wrapper {
@@ -122,10 +134,13 @@
   margin-top: 12px;
   margin-bottom: 27px;
   border-radius: 8px;
-  @media (min-width: 1024px) and (max-width: 1100px) {
+  @media (min-width: 1000px) and (max-width: 1100px) {
     width: 255px;
     padding: 9px 8px 8px 8px;
     margin-bottom: 20px;
+  }
+  @media (min-width: 200px) and (max-width: 1000px) {
+    width: 100%;
   }
 }
 .check-pay-now__wrapper {
