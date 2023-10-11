@@ -229,6 +229,7 @@
   color: $color-gray;
 }
 .list-item__action {
+  position: relative;
   width: 226px;
   display: flex;
   justify-content: space-between;
@@ -339,7 +340,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: flex-start;
   gap: 5px;
 

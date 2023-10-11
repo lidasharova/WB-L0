@@ -114,9 +114,14 @@
 }
 .tooltip-sale-position {
   width: 239px;
-  top: 54px;
-  left: -165px;
+  top: 53px;
+  left: -158px;
   z-index: 10;
+
+  @media (width >= 1500px) {
+    top: 53px;
+    left: -158px;
+  }
 }
 .list-item__count__container.position {
   z-index: 5;

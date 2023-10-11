@@ -15,8 +15,9 @@
     position: relative;
 
     @media (width >= 250px) and (width <= 350px) {
-      right: 15px;
-      width: 320px;
+      right: 7px;
+      width: 105%;
+      padding: 16px 7px 24px;
     }
   }
 }
