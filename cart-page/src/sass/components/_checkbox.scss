@@ -40,6 +40,10 @@
 }
 .checkbox__decor.cart-order__checkbox-decor {
   margin-right: 7px;
+
+  @media (width >= 250px) and (width <= 450px) {
+    margin-right: 8px;
+  }
 }
 .circle-checkbox,
 .circle-checkbox.checked {

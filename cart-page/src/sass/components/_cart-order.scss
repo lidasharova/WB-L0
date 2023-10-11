@@ -45,7 +45,7 @@
   justify-content: space-between;
 
   @media (width >= 250px) and (width <= 560px) {
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
 }
 .cart-order__title,
@@ -193,8 +193,8 @@
 
   @media (width >= 250px) and (width <= 560px) {
     background-color: $color-smoky-dark;
-    height: 66px;
     margin-top: 0;
+    padding-bottom: 7px;
     margin-bottom: 21px;
   }
 }

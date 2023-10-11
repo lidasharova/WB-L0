@@ -84,6 +84,10 @@
     top: 45px;
     right: -16px;
   }
+
+  @media (width >= 250px) and (width <= 560px) {
+    display: none;
+  }
 }
 .tooltip-condition.order-form-tooltip.open,
 .tooltip-condition.form-tooltip.open {

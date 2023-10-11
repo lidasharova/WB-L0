@@ -5,6 +5,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (width >= 250px) and (width <= 560px) {
+    height: 63px;
+  }
 }
 .footer__copyright {
   color: rgb(255 255 255 / 70%);
