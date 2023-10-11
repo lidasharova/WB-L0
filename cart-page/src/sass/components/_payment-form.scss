@@ -8,4 +8,7 @@
 
   color: $color-gray;
   margin-top: 8px;
+  @media (min-width: 250px) and (max-width: 560px) {
+    margin-bottom: 0;
+  }
 }

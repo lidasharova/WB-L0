@@ -3,7 +3,7 @@
     "id": "t-shirt-01",
     "name": "Футболка UZcotton мужская",
     "color": "Цвет: белый",
-    "size": "Размер: 56",
+    "size": "56",
     "stock": "Коледино WB",
     "provider": "OOO Вайлдберриз",
     "discount": 50.3,
@@ -55,7 +55,7 @@
     "id": "t-shirt-01-out",
     "name": "Футболка UZcotton мужская",
     "color": "Цвет: белый",
-    "size": "Размер: 56",
+    "size": "56",
     "count": 0,
     "img": "/img/cart-soldout/t-shirt-out.png"
   },

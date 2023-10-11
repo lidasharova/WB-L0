@@ -22,9 +22,15 @@
     width: 255px;
     margin-bottom: 13px;
   }
+
+  @media (min-width: 250px) and (max-width: 1000px) {
+    width: 100%;
+  }
+  @media (min-width: 250px) and (max-width: 560px) {
+    margin-bottom: 14px;
+  }
 }
 .change-button-text {
-  width: 78px;
   height: 32;
   background: inherit;
   border: none;

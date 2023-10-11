@@ -23,6 +23,9 @@
 
 .provider-container-tooltip {
   position: relative;
+  @media (min-width: 250px) and (max-width: 560px) {
+    display: none;
+  }
 }
 
 .provider-info-title {
@@ -93,6 +96,10 @@
 .tooltip-condition.form-tooltip.tooltip-condition-form {
   top: 36px;
   left: 225px;
+
+  @media (min-width: 250px) and (max-width: 560px) {
+    left: 0;
+  }
 }
 
 .price-info-tooltip__row {

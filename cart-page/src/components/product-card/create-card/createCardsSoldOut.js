@@ -6,6 +6,7 @@ export const createCardsOut = (products) => {
     itemOutWrapper.dataset.id = product.id;
     itemOutWrapper.innerHTML = `
       <div class="cart-list__item__product" data-id="${product.id}">
+         ${product.size ? `<span class="product__size-mobile size-out">${product.size}</span>` : ''}
         <div class="list-item__product__img" style="background-image: url(${
           product.img
         })" data-id="${product.id}"></div>
@@ -15,11 +16,15 @@ export const createCardsOut = (products) => {
             ${
               product.color ? `<span class="list-item__product__color">${product.color}</span>` : ''
             }
-            ${product.size ? `<span class="list-item__product__size">${product.size}</span>` : ''}
+            ${
+              product.size
+                ? `<span class="list-item__product__size">Размер: ${product.size}</span>`
+                : ''
+            }
           </div>
         </div>
       </div>
-      <div class="list-item__action">
+      <div class="list-item__action list-item__action-out">
         <div class="list-item__count__container">
           <div class="list-item__buttons-wrapper buttons-wrapper-out">
             <span class="list-item__favorite-button favorite-button-out item-icon-btn" data-id="${

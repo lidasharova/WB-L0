@@ -28,6 +28,15 @@
 .checkbox-card {
   align-self: start;
   margin-top: 38px;
+
+  @media (min-width: 250px) and (max-width: 450px) {
+    margin-top: 0px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 2;
+    background-color: $color-white;
+  }
 }
 .checkbox__decor.cart-order__checkbox-decor {
   margin-right: 7px;

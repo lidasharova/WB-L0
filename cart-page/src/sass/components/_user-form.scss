@@ -5,10 +5,19 @@
   height: 64px;
   gap: 24px;
   padding-top: 16px;
+  @media (min-width: 250px) and (max-width: 560px) {
+    flex-direction: column;
+    gap: 0;
+    height: auto;
+    padding-top: 0;
+  }
 }
 .form-group {
   flex: 1;
   margin-right: 24px;
+  @media (min-width: 250px) and (max-width: 560px) {
+    margin-right: 0;
+  }
 }
 
 .label {
@@ -46,6 +55,8 @@
 
   display: block;
   bottom: 20px;
+  @media (min-width: 250px) and (max-width: 560px) {
+  }
 }
 .error-message {
   position: relative;
@@ -63,4 +74,8 @@
 
 .form.user__form {
   padding-bottom: 40px;
+  @media (min-width: 250px) and (max-width: 560px) {
+    min-height: 420px;
+    padding-bottom: 0px;
+  }
 }

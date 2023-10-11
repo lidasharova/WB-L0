@@ -159,7 +159,7 @@
             <div class="form-group">
               <div class="input-container">
                 <input type="email" id="email" class="input-field" required />
-                <label for="email" class="label">Почта</label>
+                <label for="email" class="label">Электронная почта</label>
               </div>
             </div>
             <div class="form-group">
@@ -230,7 +230,7 @@
               <h4 class="cart-order__section-title">Оплата картой</h4>
               <span class="cart-order__change-button-icon change-button-payment"></span>
             </div>
-            <div class="payment-item-wrapper">
+            <div class="payment-item-wrapper cart-order-card">
               <div class="payment-card__icon icon-card-mir"></div>
               <div class="payment__card-number">1234 12•• •••• 1234</div>
             </div>
@@ -445,8 +445,32 @@
     </div>
   </main>
   <footer class="footer">
-    <span class="footer__copyright">© 2022 ООО «Товары и точка»</span>
+    <div class="footer__copyright">© 2022 ООО «Товары и точка»</div>
   </footer>
+  <nav class="navigation-mobile">
+    <div class="main__container nav-wrapper">
+      <a class="home-nav__link" href="#" _target="_blank">
+        <div class="home-nav__icon"></div>
+      </a>
+      <a class="search-nav__link" href="#" _target="_blank">
+        <div class="search-nav__icon"></div>
+      </a>
+      <a class="cart-nav__link" href="#" _target="_blank">
+        <div class="cart-nav__icon">
+          <div class="delivery-icon__count cart-notification">3</div>
+        </div>
+      </a>
+      <a class="favorite-nav__link" href="#" _target="_blank">
+        <div class="favorite-nav__icon"></div>
+      </a>
+      <a class="user-nav__link" href="#" _target="_blank">
+        <div class="user-nav__icon"></div>
+      </a>
+    </div>
+  </nav>
+
+
+
   <script type="module" src="/main.js"></script>
 </body>
 

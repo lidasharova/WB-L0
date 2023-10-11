@@ -26,7 +26,7 @@ export const innerHtmlCardAction = (product) => {
       <span class="list-item__delete-button item-icon-btn" data-id="${product.id}"></span>
     </div>
   </div>
-  
+
   <div class="list-item__price__wrapper">
     <div class="list-item__new-price__wrapper">
 <h3 class="list-item__new-price" data-id="${product.id}" style="font-size: ${
