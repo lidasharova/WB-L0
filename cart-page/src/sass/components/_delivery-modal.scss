@@ -1,6 +1,11 @@
 .delivery-modal-form {
   width: 500px;
   height: 408px;
+
+  @media (width >= 250px) and (width <= 500px) {
+    width: 300px;
+    height: auto;
+  }
 }
 .delivery-modal__methods-wrapper {
   display: flex;
@@ -8,6 +13,13 @@
   justify-content: space-between;
   margin-bottom: 24px;
   width: 456px;
+  @media (width >= 250px) and (width <= 500px) {
+    flex-direction: column;
+    width: 250px;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
 }
 .delivery-method-button {
   @include font(13px, 16px, 700);
@@ -29,6 +41,11 @@
   &:hover {
     background-color: $color-border-button-delivery;
   }
+
+  @media (width >= 250px) and (width <= 500px) {
+    width: 150px;
+    height: 36px;
+  }
 }
 .delivery-method-button.current-delivery-method {
   border: 2px solid $color-accent;
@@ -38,12 +55,20 @@
   @extend %font-segoe-bold;
 
   text-align: left;
+
+  @media (width >= 250px) and (width <= 560px) {
+    text-align: center;
+  }
 }
 .delivery-modal__addresses-wrapper {
   height: 163px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (width >= 250px) and (width <= 560px) {
+    height: auto;
+  }
 }
 .delivery-modal__address-wrapper {
   display: flex;
@@ -54,6 +79,11 @@
   max-width: 371px;
 
   @include font(16px, 24px);
+
+  @media (width >= 250px) and (width <= 560px) {
+    @include font(14px, 20px);
+    max-width: 190px;
+  }
 }
 .delivery-modal__delete-icon {
   margin-left: auto;
@@ -66,6 +96,10 @@
 .delivery-modal__addresses-wrapper.pickup {
   display: none;
   overflow: auto;
+
+  @media (width >= 250px) and (width <= 560px) {
+    overflow: visible;
+  }
 }
 .delivery-modal__addresses-wrapper.courier.open,
 .delivery-modal__addresses-wrapper.pickup.open {
