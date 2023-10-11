@@ -1,6 +1,3 @@
-/* eslint-disable max-lines-per-function */
-/* eslint-disable no-undef */
-
 import { calculateNewPrice } from '@/utils/calculateNewPrice.js';
 import { calculateOldPrice } from '@/utils/calculateOldPrice.js';
 export const innerHtmlCardInfo = (product) => {

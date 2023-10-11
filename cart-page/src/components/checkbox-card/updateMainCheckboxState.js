@@ -1,7 +1,4 @@
-// import { updateOrderForm } from '@/components/order-form/updateOrderForm.js';
 import { SelectedProducts } from '@/components/product-store/SelectedProducts.js';
-
-// const selectedProducts = new SelectedProducts();
 
 export const updateMainCheckboxState = () => {
   const mainCheckbox = document.querySelector('.checkbox__decor.main-checkbox');
@@ -15,11 +12,9 @@ export const updateMainCheckboxState = () => {
     if (areAllSelected) {
       mainCheckbox.classList.add('checkbox-checked');
       SelectedProducts.selectedAllProducts();
-      // updateOrderForm(selectedProducts);
     } else {
       mainCheckbox.classList.remove('checkbox-checked');
       SelectedProducts.deleteAllSelectedProducts();
-      // updateOrderForm(selectedProducts);
     }
   }
 };
