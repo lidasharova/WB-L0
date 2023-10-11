@@ -18,7 +18,7 @@
 
   @include background-icon(28px, 28px);
 
-  background-image: url('src/assets/svg/header/menu-mobile.svg');
+  background-image: url('/src/assets/svg/header/menu-mobile.svg');
 
   @media (width >= 250px) and (width <= 450px) {
     display: block;
