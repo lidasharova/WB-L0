@@ -29,8 +29,8 @@
   align-self: start;
   margin-top: 38px;
 
-  @media (min-width: 250px) and (max-width: 450px) {
-    margin-top: 0px;
+  @media (width >= 250px) and (width <= 450px) {
+    margin-top: 0;
     position: absolute;
     top: 4px;
     left: 4px;

@@ -8,31 +8,34 @@
   @media (max-width: $mobile-width) {
     padding: 14px 13px;
   }
-  @media (min-width: 250px) and (max-width: 560px) {
-    padding: 12px 13px 15px 13px;
+
+  @media (width >= 250px) and (width <= 560px) {
+    padding: 12px 13px 15px;
   }
 }
-
 .header__menu-mobile {
   display: none;
+
   @include background-icon(28px, 28px);
 
   background-image: url('src/assets/svg/header/menu-mobile.svg');
-  @media (min-width: 250px) and (max-width: 450px) {
+
+  @media (width >= 250px) and (width <= 450px) {
     display: block;
   }
 }
-
 .header__logo__container,
 .header__buttons__container {
   @extend %flex-row-space-between;
 }
 .header__buttons__container {
   width: 150px;
-  @media (min-width: 450px) and (max-width: 550px) {
+
+  @media (width >= 450px) and (width <= 550px) {
     width: 120px;
   }
-  @media (min-width: 250px) and (max-width: 450px) {
+
+  @media (width >= 250px) and (width <= 450px) {
     display: none;
   }
 }
@@ -51,7 +54,8 @@
   &:hover {
     border: 1px solid $color-white;
   }
-  @media (min-width: 250px) and (max-width: 450px) {
+
+  @media (width >= 250px) and (width <= 450px) {
     display: none;
   }
 }
@@ -95,9 +99,11 @@
     text-shadow: 5px 10px 4px rgb(0 0 0 / 30%);
   }
 
-  @media (min-width: 250px) and (max-width: 450px) {
+  @media (width >= 250px) and (width <= 450px) {
     width: 230px;
+
     @include font(22px, 24px, 600, 0.03em);
+
     text-align: center;
   }
 }
@@ -109,19 +115,23 @@
   background-color: $color-white-transparent-20;
   border-radius: 36px;
 
-  @media (min-width: 1000px) and (max-width: 1100px) {
+  @media (width >= 1000px) and (width <= 1100px) {
     width: 594px;
   }
-  @media (min-width: 600px) and (max-width: 1000px) {
+
+  @media (width >= 600px) and (width <= 1000px) {
     width: 450px;
   }
-  @media (min-width: 450px) and (max-width: 850px) {
+
+  @media (width >= 450px) and (width <= 850px) {
     width: 350px;
   }
-  @media (min-width: 450px) and (max-width: 630px) {
+
+  @media (width >= 450px) and (width <= 630px) {
     width: 150px;
   }
-  @media (min-width: 200px) and (max-width: 550px) {
+
+  @media (width >= 200px) and (width <= 550px) {
     display: none;
   }
 }
@@ -152,26 +162,27 @@
     background-image: url('/src/assets/svg/header/search-active.svg');
   }
 
-  @media (min-width: 450px) and (max-width: 630px) {
+  @media (width >= 450px) and (width <= 630px) {
     margin: 12px 10px 12px 0;
   }
 }
-
 .search__button-mobile {
   @include background-icon(28px, 28px);
+
   background-color: transparent;
   background-image: url('/src/assets/svg/header/search-hover.svg');
   margin: 0;
   border: none;
   display: none;
-  @media (min-width: 450px) and (max-width: 630px) {
+
+  @media (width >= 450px) and (width <= 630px) {
     margin: 12px 10px 12px 0;
   }
-  @media (min-width: 200px) and (max-width: 550px) {
+
+  @media (width >= 200px) and (width <= 550px) {
     display: block;
   }
 }
-
 #search__input::placeholder {
   color: $color-white-transparent-45;
 

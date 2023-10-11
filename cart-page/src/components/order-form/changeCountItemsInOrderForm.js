@@ -11,5 +11,3 @@ export const changeCountItemsInOrderForm = (products) => {
   countItemsInOrderForm.textContent = getWordFromNumberItems(count, wordForms);
   setStateOrderButton(count);
 };
-
-

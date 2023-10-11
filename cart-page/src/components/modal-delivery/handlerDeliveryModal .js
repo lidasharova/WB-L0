@@ -47,4 +47,3 @@ export const handlerDeliveryModal = () => {
     addressWrapper.addEventListener('click', handleCheckboxClick);
   });
 };
-

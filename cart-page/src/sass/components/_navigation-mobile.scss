@@ -5,20 +5,20 @@
   justify-content: space-between;
   background-color: $color-white;
   padding: auto 13px;
-  @media (min-width: 250px) and (max-width: 560px) {
-    padding: 15px 13px 15px 13px;
+
+  @media (width >= 250px) and (width <= 560px) {
+    padding: 15px 13px;
   }
 }
-
 .navigation-mobile {
   display: none;
-  @media (min-width: 250px) and (max-width: 560px) {
+
+  @media (width >= 250px) and (width <= 560px) {
     display: block;
     height: 56px;
     width: 100%;
   }
 }
-
 .home-nav__icon,
 .search-nav__icon,
 .cart-nav__icon,
@@ -26,26 +26,21 @@
 .user-nav__icon {
   @include background-icon(28px, 28px);
 }
-
 .home-nav__icon {
   background-image: url('/src/assets/svg/footer/home.svg');
 }
-
 .search-nav__icon {
   background-image: url('/src/assets/svg/footer/search.svg');
 }
-
 .cart-nav__icon {
   background-image: url('/src/assets/svg/footer/cart.svg');
 }
 .favorite-nav__icon {
   background-image: url('/src/assets/svg/footer/favorites.svg');
 }
-
 .user-nav__icon {
   background-image: url('/src/assets/svg/footer/user.svg');
 }
-
 .cart-nav__link {
   position: relative;
 }

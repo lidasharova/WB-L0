@@ -16,31 +16,31 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
 .provider-info__tooltip.tooltip-provider.open {
   opacity: 1;
 }
-
 .provider-container-tooltip {
   position: relative;
-  @media (min-width: 250px) and (max-width: 560px) {
+
+  @media (width >= 250px) and (width <= 560px) {
     display: none;
   }
 }
-
 .provider-info-title {
   display: block;
+
   @include font(13px, 16px);
   @extend %font-segoe-bold;
+
   margin: 0;
 }
 .provider-info-text,
 .condition-info__tooltip__content {
   @include font(13px, 16px);
 }
-
 .tooltip-provider {
   @include font(13px, 16px);
+
   margin-top: 3px;
   width: 280px;
   height: 104px;
@@ -49,17 +49,16 @@
 }
 .tooltip-sale-title {
   @include font(13px, 16px);
+
   color: rgb(160 160 164 / 100%);
 }
-
 .tooltip-sale__text {
   display: flex;
   justify-content: space-between;
 }
-
 .tooltip-condition {
   position: absolute;
-  padding: 10px 16px 14px 16px;
+  padding: 10px 16px 14px;
   border-radius: 8px;
   background: #fff;
   color: black;
@@ -73,50 +72,48 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   @include font(13px, 16px);
+
   width: 288px;
   height: 56px;
   top: 45px;
   right: 110px;
-  @media (min-width: 1000px) and (max-width: 1100px) {
+
+  @media (width >= 1000px) and (width <= 1100px) {
     top: 45px;
     right: -16px;
   }
 }
-
 .tooltip-condition.order-form-tooltip.open,
 .tooltip-condition.form-tooltip.open {
   opacity: 1;
 }
-
 .price-info__tooltip.tooltip-sale-position.open {
   opacity: 1;
 }
-
 .tooltip-condition.form-tooltip.tooltip-condition-form {
   top: 36px;
   left: 225px;
 
-  @media (min-width: 250px) and (max-width: 560px) {
+  @media (width >= 250px) and (width <= 560px) {
     left: 0;
   }
 }
-
 .price-info-tooltip__row {
   @include font(13px, 16px);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 8px;
 }
-
 .tooltip-sale-position {
   width: 239px;
   top: 54px;
   left: -165px;
   z-index: 10;
 }
-
 .list-item__count__container.position {
   z-index: 5;
 }
