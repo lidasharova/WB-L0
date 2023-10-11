@@ -1,4 +1,4 @@
-## Тестовое задание от Вайлдберриз
+## Тестовое задание от Вайлдберриз (27.09 - 11.10)
 
 ## [deploy landing page](https://wb-store-sharova.netlify.app/)
 
